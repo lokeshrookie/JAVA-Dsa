@@ -1,4 +1,4 @@
-package com.Lokesh;
+package com.Lokesh.Lokesh;
 import java.util.Scanner;
 public class CountNums {
     // to count number of times a digit is occurred in a number.
