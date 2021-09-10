@@ -14,9 +14,7 @@ public class Prime {
             return ; //System.exit(1);
         }
 
-        if(n == 4 ){
-            System.out.println("Not a Prime");
-        }
+        if(n == 4 ) System.out.println("Not a Prime");
         else{
             while(c * c < n){
                 if (n % c == 0 ){
@@ -27,9 +25,7 @@ public class Prime {
                 c = c + 1; /// c++
 
             }// end of while
-            if(c * c > n ){
-                System.out.println("Prime");
-            }
+            if(c * c > n ) System.out.println("Prime");
         }
 
     }

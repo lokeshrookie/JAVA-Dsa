@@ -1,7 +1,5 @@
-package com.LokeshArrays;
-
+package com.Lokesh.LokeshArrays;
 import  java.util.Scanner;
-
 public class Matrix
 {
     public static void main(String[] args) {
@@ -10,21 +8,13 @@ public class Matrix
         System.out.println("Enter the number of rows : ");
         rows = s.nextInt();
         columns = s.nextInt();
-
-
         //creting an array to store values of matrix.
-        int a[][] = new int[rows][columns];
+        int[][] a = new int[rows][columns];
         System.out.println("Enter the values. ");
-
         // taking the values into the matrix
-        for(i=0; i<rows; i++){
-            for(j = 0; j<columns; j++){
+        for(i=0; i<rows; i++)
+            for (j = 0; j < columns; j++)
                 a[i][j] = s.nextInt();
-            }
-        }
-
-
-
         //Printing the array.
         int index = 0;
         System.out.println("The elements of the array are : ");

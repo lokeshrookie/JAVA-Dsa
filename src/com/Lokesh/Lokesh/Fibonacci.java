@@ -15,7 +15,8 @@ public class Fibonacci {
         int b = 1;
       //  System.out.println(a);
         int count = 2;
-        while(count <= n){
+        while(true){
+            if (count > n) break;
             int temp = a + b;
             a = b;
             b = temp  ;

@@ -10,7 +10,6 @@ public class TypeCasting {
         //TYPE CASTING
         int num = (int) 65.55f; // COMPRESSING THE BIGGER NUMBER INTO A SMALLER ONE.
         System.out.println(num);
-
         //automatic type promotion in expressions
         int a = 257;
         byte b = (byte) a; // byte can store upto 256. so the output is 1
