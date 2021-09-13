@@ -1,4 +1,4 @@
-package com.LokeshArrays;
+package com.Lokesh.LokeshArrays;
 
 import java.util.Arrays;
 

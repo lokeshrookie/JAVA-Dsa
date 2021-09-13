@@ -14,6 +14,7 @@ public class BinarySearch {
                 return mid;
         }
         return -1;
+
     }// end of BinarySearch Function
     //main
     public static void main(String[] args) {
