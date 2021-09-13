@@ -8,7 +8,7 @@ public class Matrix
         System.out.println("Enter the number of rows : ");
         rows = s.nextInt();
         columns = s.nextInt();
-        //creting an array to store values of matrix.
+        //creating an array to store values of matrix.
         int[][] a = new int[rows][columns];
         System.out.println("Enter the values. ");
         // taking the values into the matrix
@@ -21,7 +21,7 @@ public class Matrix
         for(i =0 ; i<rows ; i++){
             for(j =0; j<columns; j++){
                 System.out.print( a[i][j]+ " ");
-                // " " is used to create a space between the elemts on the output
+                // " " is used to create a space between the elements on the output
             }
         }
 

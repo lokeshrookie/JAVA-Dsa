@@ -5,10 +5,10 @@ public class LinearSearch {
         Scanner s = new Scanner(System.in);
         int[] nums = {  1, 2, 3, 4, 5, 6, 7, 8, 9 };// arr containing 1 to 9 numbers
         int target = s.nextInt(); //take input to search
-       int ans =  linearsearch(nums, target);
+       int ans =  linearSearch(nums, target);
         System.out.println(ans);
     }
-    static  int linearsearch(int arr[], int target){
+    static  int linearSearch(int[] arr, int target){
          if(arr.length == 0){
              return -1;
          }

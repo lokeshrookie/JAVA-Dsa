@@ -1,7 +1,6 @@
 package com.Lokesh.Search;
 
 import java.util.Scanner;
-
 public class linearSearchRange {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -11,11 +10,11 @@ public class linearSearchRange {
         System.out.println("Enter the range( min & max) to search");
         int min = s.nextInt();
         int max = s.nextInt();
-        int ans =  linearsearch(nums, target, min , max);
+        int ans =  linearSearch(nums, target, min , max);
         System.out.println(ans);
 
     }
-    static  int linearsearch(int arr[], int target, int min, int max){
+    static  int linearSearch(int[] arr, int target, int min, int max){
 
         if(arr.length == 0){
             return -1;

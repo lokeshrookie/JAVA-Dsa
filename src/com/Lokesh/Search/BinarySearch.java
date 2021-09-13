@@ -2,8 +2,8 @@ package com.Lokesh.Search;
 import java.util.Scanner;
 public class BinarySearch {
     static int Search(int[] nums, int target){
-        int start = 0;
-        int end = nums.length-1;
+        int start = 0; //start index
+        int end = nums.length-1;//ending element index
         while(start <= end){
             int mid = start + (end - start)/2;
             if(target < nums[mid])
@@ -14,7 +14,6 @@ public class BinarySearch {
                 return mid;
         }
         return -1;
-
     }// end of BinarySearch Function
     //main
     public static void main(String[] args) {

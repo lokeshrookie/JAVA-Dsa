@@ -1,14 +1,11 @@
 package com.Lokesh.Lokesh;
-
 import java.util.Scanner;
-
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
 //        // code for recursion function :
 //        Main re = new Main();
-
 //         int ans = re.recursion(n);
         // n =  last fibonacci number.
         int a = 0;
