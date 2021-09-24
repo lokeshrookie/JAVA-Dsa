@@ -2,7 +2,7 @@ package com.Lokesh.Strings;
 import java.io .*;
 import java.util .*;
 
-    public class SearchAllMethods {
+    public class StringAllMethods {
 //    public static void main(String[] args) {
 //
 //    }
