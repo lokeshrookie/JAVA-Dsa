@@ -8,16 +8,18 @@ public class Ascii {
     public static void main(String[] args) {
         char a = 'Z';
         int b = a;
-
         Scanner s= new Scanner(System.in);
         char ch = s.next().trim().charAt(0);
         if( (ch < 'z' && ch > 'a') || (ch > 'A' && ch < 'Z')) {
             if (ch > 'a' && ch < 'z') {
                 System.out.println("lowerCase");
             }
-            if (ch > 'A' && ch < 'Z') {
+            else if (ch > 'A' && ch < 'Z') {
                 System.out.println("HigherCase");
             }
+        }
+        else{
+            System.out.println("Invalid Character!");
         }
 //        System.out.println(b);
     }
