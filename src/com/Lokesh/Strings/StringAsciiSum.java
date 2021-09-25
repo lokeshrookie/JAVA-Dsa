@@ -1,4 +1,4 @@
-package com.Lokesh.BasicPrograms;
+package com.Lokesh.Strings;
 
 import java.util.Scanner;
 
