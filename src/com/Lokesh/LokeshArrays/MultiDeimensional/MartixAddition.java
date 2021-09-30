@@ -54,8 +54,6 @@ public class MartixAddition {
                 add[row][column] = arr1[row][column] / arr2[row][column];
                 System.out.print(add[row][column] + " ");
             }
-
-
         }
 
     }

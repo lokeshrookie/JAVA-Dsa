@@ -14,10 +14,11 @@ public class SortingNSquare {
                 }
             }
             for(int i = 0; i<a.length; i++){
-                System.out.println(a[i]);
+                System.out.print(a[i] + " ");
             }
 //            for (int j  : a){
 //                System.out.println(j);
 //            }
+            System.out.println(a.length);
         }
     }
