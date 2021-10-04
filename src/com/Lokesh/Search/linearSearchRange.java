@@ -1,5 +1,5 @@
 package com.Lokesh.Search;
-
+//Linear Search to find at element in the given range of Index
 import java.util.Scanner;
 public class linearSearchRange {
     public static void main(String[] args) {

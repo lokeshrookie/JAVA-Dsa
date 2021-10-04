@@ -1,5 +1,5 @@
 package com.Lokesh.Search;
-
+//Linear search to find the target character in a String
 import java.util.Arrays;
 
 public class LinearSearchSrting {
