@@ -1,5 +1,5 @@
 package com.Lokesh.Sorting;
-
+//Selection sort
 public class SelectionSort {
     public static void main(String[] args) {
         int[] a = {1,44,64,8,35,77};
