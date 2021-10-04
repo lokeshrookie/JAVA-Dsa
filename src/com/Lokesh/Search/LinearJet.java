@@ -1,5 +1,5 @@
 package com.Lokesh.Search;
-
+//Linear Search
 import java.util.Scanner;
 
 public class LinearJet {
