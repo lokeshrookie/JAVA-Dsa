@@ -1,6 +1,6 @@
 package com.Lokesh.Search;
 
-
+//LeetCode Binary Search Solution
 class BinarySearchLeetCode {
     public int search(int[] nums, int target) {
         int start = 0;
