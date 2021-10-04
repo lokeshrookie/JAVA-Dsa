@@ -1,5 +1,5 @@
 package com.Lokesh.Search;
-// Linear search to search minimum element of an array.
+// Linear search to find  minimum element of an array.
 public class LinearSearchMinimum {
     public static void main(String[] args) {
         int[] nums = { 22, 33, -5, -45, 99, 11, 43};
