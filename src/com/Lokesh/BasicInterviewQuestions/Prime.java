@@ -9,7 +9,8 @@ public class Prime {
         System.out.println(isPrime(number));
     }
     static Boolean isPrime(int n){
-        if (n<2){
+        if (n<2)
+       {
             return false;
         }
         int c = 2;
