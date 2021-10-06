@@ -2,6 +2,7 @@ package com.Lokesh.Strings;
 
 import java.util.Scanner;
 /* -------Algorithm-------------
+//This is java program to 
     1.Take an input String.
     2.convert the String to character array. using toCharArray() method.
     3.Iterate through the char array.
@@ -16,7 +17,7 @@ public class FirstLetterOfWord {
     public static void main(String[] args) {
 //        Scanner s = new Scanner(System.in);
         String str = "Hello, My Name Is Lokesh";
-
+        
         char[] charArr = str.toCharArray();
         for(int i = 0; i<charArr.length; i++){
 //
@@ -24,7 +25,7 @@ public class FirstLetterOfWord {
                 if(i == 0){
                     System.out.println(charArr[i]);
                 }
-                else if((charArr[i-1]) == ' '){
+                else if((charArr[i-1]) == ' '){ 
                     System.out.println(charArr[i]);
                 }
 
