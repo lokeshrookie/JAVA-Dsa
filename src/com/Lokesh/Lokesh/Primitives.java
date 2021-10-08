@@ -15,7 +15,7 @@ public class Primitives { //primitive data type is a data type that we cannot br
         // long largeInteger = 34567876543L;
         // boolean check = false;
         // Integer no = 64;
-        // //Integer is a class. //wrapper calss.
+        // Integer is a class. //wrapper calss.
 
 
 
