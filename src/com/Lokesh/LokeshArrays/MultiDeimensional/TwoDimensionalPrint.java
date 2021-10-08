@@ -27,7 +27,7 @@ public class TwoDimensionalPrint {
             }
         }
         // inputs are taken
-            s.close();
+        s.close();
 
         //printing inputs
         for (int row = 0; row < arr.length; row++) {
