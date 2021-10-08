@@ -19,7 +19,7 @@ public class Calculator {
                 System.out.println("Enter two numbers: ");
             int num1 = s.nextInt();
             int num2 = s.nextInt();
-
+            s.close();
                 if(op == '+'){
                     ans = num1 + num2 ;
                 }

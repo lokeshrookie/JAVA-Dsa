@@ -1,5 +1,4 @@
-package com.LokeshArrays;
-import java.util.*;
+package com.Lokesh.LokeshArrays;
 
 public class ArrayRollno {
     public static void main(String[] args) {

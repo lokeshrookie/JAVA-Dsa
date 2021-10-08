@@ -4,6 +4,7 @@ public class ReverseNumber {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int num  = s.nextInt();
+        s.close();
         int ans = 0; // this "ans will store the reversed number
 
         while(num>0){

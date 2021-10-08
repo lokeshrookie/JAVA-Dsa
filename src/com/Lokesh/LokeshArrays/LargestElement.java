@@ -1,6 +1,6 @@
 package com.Lokesh.LokeshArrays;
 
-import java.sql.SQLOutput;
+// import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LargestElement {
@@ -11,6 +11,7 @@ public class LargestElement {
         for (int i = 0; i < size; i++) { // enter array elements.
             arr[i] = s.nextInt() ;
         }
+        s.close();
         int largest = arr[0];
         for (int j = 0; j < size; j++) {
             if(arr[j] > largest)

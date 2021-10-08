@@ -7,6 +7,7 @@ public class LinearSearch {
         int target = s.nextInt(); //take input to search
        int ans =  linearSearch(nums, target);
         System.out.println(ans);
+        s.close();
     }
     static  int linearSearch(int[] arr, int target){
          if(arr.length == 0){

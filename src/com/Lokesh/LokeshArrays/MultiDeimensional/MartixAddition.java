@@ -21,6 +21,7 @@ public class MartixAddition {
                 arr2[row][column] = s.nextInt();
             }
         }
+        s.close();
         System.out.println();
         System.out.println("Matrix after addition is:");
         for (int row = 0; row <add.length ; row++) {

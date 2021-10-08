@@ -4,6 +4,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
+        s.close();
 //        // code for recursion function :
 //        Main re = new Main();
 //         int ans = re.recursion(n);

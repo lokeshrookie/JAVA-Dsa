@@ -1,8 +1,8 @@
-package com;
+// // package com
 
-public class Shortcuts {
+// public class Shortcuts {
 
-    //
+//     //
 
 
-}
+// }

@@ -6,6 +6,7 @@ public class CountNums {
         Scanner s = new Scanner(System.in);
         int  num = 123345;
         int count = 0;
+        s.close();
         while (num>0){
             int rem = num%10;// to check the last number is 3 or not.
             if(rem == 3){

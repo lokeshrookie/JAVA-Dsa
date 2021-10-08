@@ -14,6 +14,7 @@ public class ReverseNumber {
         long Number = s.nextInt();
         long ans = 0; // ans to store reversed number
         long rem = 0;
+        s.close();
         while(Number > 0 ){
             rem = Number%10;
             ans =  ans * 10 + rem;

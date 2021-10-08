@@ -11,6 +11,7 @@ public class PrintStringArray {
         for (int i= 0; i <str.length; i++) {
             str[i] = s.next();
         }
+        s.close();
 //        for (int i = 0; i < str.length; i++) {
             System.out.println(Arrays.toString(str));
 //        }

@@ -22,6 +22,7 @@ class LinearSearch2
         }
         System.out.println("Enter the target element : ");
         int target = s.nextInt();
+        s.close();
         // loop for searching.
         for(int i = 0; i<arr.length; i++){
             if(arr[i] == target){

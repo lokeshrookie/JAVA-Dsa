@@ -6,8 +6,9 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int a  = s.nextInt();
+        s.close();
         int ans = recursion(a);
-//        System.out.println(ans);
+       System.out.println(ans);
 
     }
     static int recursion( int n ){

@@ -16,7 +16,7 @@ public class Matrix
             for (j = 0; j < columns; j++)
                 a[i][j] = s.nextInt();
         //Printing the array.
-        int index = 0;
+        // int index = 0;
         System.out.println("The elements of the array are : ");
         for(i =0 ; i<rows ; i++){
             for(j =0; j<columns; j++){

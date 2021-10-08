@@ -7,6 +7,7 @@ public class Prime {
         Scanner s = new Scanner(System.in);
         int number = s.nextInt();
         System.out.println(isPrime(number));
+        s.close();
     }
     static Boolean isPrime(int n){
         if (n<2)

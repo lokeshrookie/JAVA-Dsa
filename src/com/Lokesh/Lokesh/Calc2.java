@@ -9,6 +9,7 @@ public class Calc2 {
              double num1 = s.nextDouble();
              double num2 = s.nextDouble();
              System.out.println("Enter an Operator");
+             s.close();
             char op = s.next().trim().charAt(0);
             if(op == '+' || op == '-' || op == '*' || op == '/'){
 
@@ -29,7 +30,7 @@ public class Calc2 {
                 }
 
             }
-
+                    System.out.println(ans);
         }
 
 
