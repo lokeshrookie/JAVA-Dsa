@@ -1,6 +1,6 @@
 package com.Lokesh.Strings;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 /* -------Algorithm-------------
 //This is java program to 
     1.Take an input String.

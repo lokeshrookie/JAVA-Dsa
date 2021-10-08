@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSortJet {
     public static void main(String[] args) {
         int[] arr2 = {3, 46, -5, 9};
-        int[] arr3 = {'c'};
+        // int[] arr3 = {'c'};
 //        System.out.println(Arrays.toString(new int[]{'c','d','e'}));
         System.out.println(Arrays.toString(bubbleSort(arr2)));
     }

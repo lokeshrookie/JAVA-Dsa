@@ -7,10 +7,10 @@ public class StringMethods
 // System.out.println(anotherString); 
 
 String a = "lokesh";
-String b = "lokesh";
+String b = "lokesh";//
 // String a = new String("Lokesh");
 // String b  = new String("Lokesh");
-String c = "loki";
+// String c = "loki";
 System.out.println(a == b);
 System.out.println(a != b);
 System.out.println(a.equals(b));

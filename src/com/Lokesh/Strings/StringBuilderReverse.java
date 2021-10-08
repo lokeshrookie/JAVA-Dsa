@@ -9,8 +9,8 @@ public class StringBuilderReverse {
 //        System.out.println(reverseString(str));
         StringBuilder sb = new StringBuilder(str);
         System.out.println(sb.reverse());
-        String strings = "Hello World! How are you";
-//        System.out.println(sb.compareTo(strings));
+        StringBuilder strings = new StringBuilder("Hello World! How are you");
+       System.out.println(sb.compareTo(strings));
 //        System.out.println();
     }
 //    static String reverseString(String s ){
