@@ -1,4 +1,4 @@
-package com.Lokesh;
+package com.Lokesh.Lokesh;
 import java.util.Scanner;
 public class ReverseNumber {
     public static void main(String[] args) {
