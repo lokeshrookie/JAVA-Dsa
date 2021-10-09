@@ -23,7 +23,6 @@ public class Matrix
                 System.out.print( a[i][j]+ " ");
                 // " " is used to create a space between the elements on the output
             }
-        }
-
+        }//endof for loop
     }// end of main method
 }
