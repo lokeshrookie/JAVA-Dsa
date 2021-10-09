@@ -1,15 +1,15 @@
-import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
-
+// import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
+// import java.util.Scanner;
 public class MInMaxPair 
 {
 
-    Public static void main(String[] args){
+    public static void main(String[] args){
         int[] arr = {1,2,3,4,5};
         int size  = arr.length;
         System.out.println(getMinMax(arr, size));
 
     }
-    static pair getMinMax(long arr[], long n)  
+    static int[] getMinMax(int[] arr, long n)  
     {
         //Write your code here
          long min = arr[0], max = arr[0];
@@ -32,7 +32,9 @@ public class MInMaxPair
         }
     }
     // String output = 
-    return new pair(min, max);
+    return new int[]{(int) min,(int) max};
     }
 }
+
+
 
