@@ -7,7 +7,7 @@ public class ReturnArrayInMethod{
         return  (new int[]{1,2,3,4});
     }
 
-
+//
     public static void main(String args[]){
 //calling method which returns an array
         int arr[]=get();
