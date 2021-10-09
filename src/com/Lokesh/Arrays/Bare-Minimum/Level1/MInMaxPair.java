@@ -7,7 +7,6 @@ public class MInMaxPair
         int[] arr = {1,2,3,4,5};
         int size  = arr.length;
         System.out.println(getMinMax(arr, size));
-
     }
     static int[] getMinMax(int[] arr, long n)  
     {
