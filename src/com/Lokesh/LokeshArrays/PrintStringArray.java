@@ -12,9 +12,9 @@ public class PrintStringArray {
             str[i] = s.next();
         }
         s.close();
-//        for (int i = 0; i < str.length; i++) {
+    //    for (int i = 0; i < str.length; i++) {
             System.out.println(Arrays.toString(str));
-//        }
+    //    }
 //        System.out.print( "[");
 
         for (int i = 0; i <str.length ; i++) {
