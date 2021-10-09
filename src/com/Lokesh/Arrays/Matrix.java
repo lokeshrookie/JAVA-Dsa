@@ -1,4 +1,4 @@
-package com.Lokesh.LokeshArrays;
+package com.Lokesh.Arrays;
 import  java.util.Scanner;
 public class Matrix
 {
