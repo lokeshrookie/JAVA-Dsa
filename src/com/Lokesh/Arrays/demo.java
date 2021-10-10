@@ -6,6 +6,7 @@ public class demo {
            System.out.println("Elements of the array are: " + Arrays.toString(arr));
            System.out.println("Hello");
            System.out.println();
+           System.out.println("hello");
     }
 }
 
