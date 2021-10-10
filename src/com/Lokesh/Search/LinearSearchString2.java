@@ -21,5 +21,5 @@ public class LinearSearchString2 {
             }
         }
         return false;
-    }//
+    }
 }
