@@ -5,7 +5,7 @@ public class Matrix
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int  rows , columns , j , i;
-        System.out.println("Enter the number of rows : ");
+        System.out.println("Enter the number of rows and columns : ");
         rows = s.nextInt();
         columns = s.nextInt();
         //creating an array to store values of matrix.
@@ -20,6 +20,7 @@ public class Matrix
         System.out.println("The elements of the array are : ");
         for(i =0 ; i<rows ; i++){
             for(j =0; j<columns; j++){
+
                 System.out.print( a[i][j]+ " ");
                 // " " is used to create a space between the elements on the output
             }
