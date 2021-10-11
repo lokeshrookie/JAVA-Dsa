@@ -9,6 +9,7 @@ public class IsPrime {
         Boolean b = isPrime(number);
         System.out.println(b);
         System.out.println(isArmstrong(number));
+        s.close();
     }
 
 

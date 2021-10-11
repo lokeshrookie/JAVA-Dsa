@@ -1,4 +1,4 @@
-package com.LokeshArrays;
+package com.Lokesh.Arrays;
 import java.util.*;
 public class Input {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Input {
         for(int num: arr){  // for every element in the array, print the element
             System.out.println(num + " "); // here num represents element of the array.
         }
-
+            s.close();
         System.out.println(Arrays.toString(arr)); // Arrays.toString() method is used to print the array. if we print normally, we get the address of the array as output.
     }
 }

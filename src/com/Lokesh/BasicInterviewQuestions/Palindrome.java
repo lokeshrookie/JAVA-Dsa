@@ -5,6 +5,7 @@ public class Palindrome {
         Scanner s = new Scanner(System.in);
         int  number = s.nextInt();
         System.out.println(isPalindrome(number));
+        s.close();
     }
     static boolean isPalindrome(int num){
         int original = num;

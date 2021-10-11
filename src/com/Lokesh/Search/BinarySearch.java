@@ -20,6 +20,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int target = s.nextInt();
+        s.close();
         int[] nums = {-23, -21, -4, 0, 3, 43, 566, 343, 6345};
         int ans = Search(nums, target);
         System.out.println(ans);

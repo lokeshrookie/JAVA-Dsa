@@ -10,6 +10,7 @@ public class linearSearchRange {
         System.out.println("Enter the range( min & max) to search");
         int min = s.nextInt();
         int max = s.nextInt();
+        s.close();
         int ans =  linearSearch(nums, target, min , max);
         System.out.println(ans);
 

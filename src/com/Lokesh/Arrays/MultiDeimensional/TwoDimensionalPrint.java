@@ -1,4 +1,4 @@
-package com.Lokesh.LokeshArrays.MultiDeimensional;
+package com.Lokesh.Arrays.MultiDeimensional;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class TwoDimensionalPrint {
             }
         }
         // inputs are taken
-
+        s.close();
 
         //printing inputs
         for (int row = 0; row < arr.length; row++) {
@@ -38,3 +38,10 @@ public class TwoDimensionalPrint {
         }
     }
 }
+
+
+
+
+
+
+

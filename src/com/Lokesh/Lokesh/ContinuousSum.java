@@ -10,7 +10,9 @@ public class ContinuousSum {
             System.out.print("Enter a number (Press 0 to exit): ");
             input = in.nextInt();
             sum += input;
+            
         }while(input != 0);
+        in.close();
         System.out.println("Total sum is : "+sum);
 
     }

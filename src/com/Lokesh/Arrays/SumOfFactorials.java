@@ -1,4 +1,4 @@
-package com.Lokesh.LokeshArrays;
+package com.Lokesh.Arrays;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class SumOfFactorials {
         for (int i = 0; i < size; i++) {
             arr[i] = s.nextInt();
         }
-        //
+        s.close();
         for (int i = 0; i < size; i++) {
             if(arr[i]>0 && arr[i] < 10){
                 sum += fact(arr[i]);

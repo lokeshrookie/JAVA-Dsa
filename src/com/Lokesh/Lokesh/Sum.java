@@ -5,6 +5,7 @@ public class Sum {
         Scanner input = new Scanner(System.in);
         float num1 = input.nextFloat();
         float num2 = input.nextFloat();
+        input.close();
         float sum = num1 + num2;
         System.out.println("Sum : " + sum);
     }

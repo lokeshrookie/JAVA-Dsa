@@ -6,7 +6,8 @@ public class LinearSearchSrting {
     public static void main(String[] args) {
         String name = "Lokesh";
         char target = 'L';
-       System.out.println(linearSearch(name, target));
+        System.out.println(linearSearch(name, target));
+       System.out.println(linearSearch2(name, target));
        System.out.println("String as Char array: " + Arrays.toString(name.toCharArray()));
         // if Arrays.toString is not used, output will be address of an array : [C@2d98a335
     }

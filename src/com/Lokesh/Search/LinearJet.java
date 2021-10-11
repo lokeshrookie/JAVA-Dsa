@@ -14,6 +14,7 @@ public class LinearJet {
         }
         System.out.println("Enter an element to search");
         int target = s.nextInt();
+        s.close();
         for (int i = 0; i < arr.length; i++) {
 //            if(arr.length == 0){
 //                return -1;

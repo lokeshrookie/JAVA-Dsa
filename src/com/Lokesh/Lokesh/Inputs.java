@@ -1,4 +1,4 @@
-package com.Lokesh;
+package com.Lokesh.Lokesh;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ public class Inputs {
         Scanner input = new Scanner(System.in);
         System.out.println("Pleas enter some input : ");
         int rollno = input.nextInt();
+        input.close();
         System.out.println("Your roll number is  " + rollno);
     }
 }

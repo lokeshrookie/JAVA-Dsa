@@ -8,6 +8,7 @@ public class LargestOfThree {
         int num1 = s.nextInt();
         int num2 = s.nextInt();
         int num3 = s.nextInt();
+        s.close();
         if(num1 > num2){
             //number 1 will be largest. now we have to compare number 1 with number 3.
             if ( num1 > num3){

@@ -6,6 +6,7 @@ public class FibonacciSeries {
         Scanner s  = new Scanner(System.in);
         System.out.print("Enter the range of fibonacci numbers to print :");
         int n = s.nextInt();
+        s.close();
         // loop to print every Fibonacci number
         for (int i = 0; i< n ; i++){
             System.out.println(recursive(i));

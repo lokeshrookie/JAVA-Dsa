@@ -1,4 +1,4 @@
-package com.Lokesh.LokeshArrays;
+package com.Lokesh.Arrays;
 
 public class LargestOfTwoDimensionalArray {
     public static void main(String[] args) {
