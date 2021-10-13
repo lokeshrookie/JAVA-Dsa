@@ -12,6 +12,7 @@ public class LcmHcfOptimised
         }
         return gcd(b%a, a);
     }
+    //lcm using gcd
     static int lcm(int a, int b) {
         return a * b / gcd(a, b);
     }
