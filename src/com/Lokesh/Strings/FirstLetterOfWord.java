@@ -1,5 +1,5 @@
 package com.Lokesh.Strings;
-
+// FIrst letter of the word.
 // import java.util.Scanner;
 /* -------Algorithm-------------
 //This is java program to 
