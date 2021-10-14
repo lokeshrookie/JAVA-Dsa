@@ -9,7 +9,6 @@ public class Patterns {
                       System.out.print(ch); // print "j"
                       ch++;
                   }
-
                   System.out.println();
               }
     }
