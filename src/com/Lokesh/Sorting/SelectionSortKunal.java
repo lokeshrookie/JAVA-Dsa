@@ -1,5 +1,17 @@
 package com.Lokesh.Sorting;
 
+
+///**
+// *
+// *          IN SELECTION SORT, FOR EVERY ITERATION, LARGEST ELEMENT WILL BE SWAPPED WITH THE LAST INDEX.
+// * Algorithm:
+// * 1.select the index of largest element.
+// * 2.find the last index.    (last element = arr.length-i-1)
+// * 3.swap largest element with to the last element.
+// * 4.then select the next largest element using index and swap the element with next largest index.
+// *
+// */
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
