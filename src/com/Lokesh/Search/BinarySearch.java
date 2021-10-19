@@ -1,5 +1,9 @@
 package com.Lokesh.Search;
 //Binary Search using function
+
+/*
+Binary Search used for Searching elements in sorted arrays.
+ */
 import java.util.Scanner;
 public class BinarySearch {
     static int Search(int[] nums, int target){
