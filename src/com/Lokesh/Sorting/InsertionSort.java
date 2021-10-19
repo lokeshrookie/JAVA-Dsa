@@ -16,16 +16,16 @@ import java.util.Arrays;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int arr[] = {534,-23,0,232,4,11,-1213,3};
+        int[] arr = {534,-23,0,232,4,11,-1213,3};
         insertion(arr);
         System.out.println(Arrays.toString(arr));
     }
 
     static int[] insertion(int[] arr){
 
-        for (int i = 0; i <arr.length-1; i++) { // i runs till n-1
+        for (int i = 0; i <arr.length-1; i++) { // i runs till n-1 . if i = 2, j runs 3 times, j=(3,2,1) // if i = 3, j = (4,3,2,1).
             for (int j = i+1 ; j > 0 ; j--) {
-                if(arr[j] < arr[j-1]){    // i = j-1
+                if(arr[j] < arr[j-1]){    // if false, break.
                     swap(arr, j, j-1);
                 }
                 else
@@ -45,3 +45,11 @@ public class InsertionSort {
     }
 
 }
+
+
+/*
+5 4 3 2 1
+ 5 4 3 2 1
+
+ i = 0:     4 5 3 2 1
+ */
