@@ -11,8 +11,6 @@ public class LL {
         fruits.add("PineApple");
         fruits.add("Banana");
         fruits.add("Orange");
-
-
         numbers.add(4);
         numbers.add(5);
         numbers.add(8);

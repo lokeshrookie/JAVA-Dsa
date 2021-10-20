@@ -14,8 +14,7 @@ public class LinearSearch {
              return -1;
          }
          for(int index = 0; index<arr.length; index++){
-             int element = arr[index];
-             if (target  == element){ // if target is matched with any element, returns index.
+             if (target  ==arr[index]) { // if target is matched with any element, returns index.
                  return  index;
              }
          }

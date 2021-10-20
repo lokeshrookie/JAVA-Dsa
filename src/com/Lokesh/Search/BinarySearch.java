@@ -1,6 +1,5 @@
 package com.Lokesh.Search;
 //Binary Search using function
-
 /*
 Binary Search used for Searching elements in sorted arrays.
  */
