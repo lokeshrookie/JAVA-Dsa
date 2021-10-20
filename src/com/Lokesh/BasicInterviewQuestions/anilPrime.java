@@ -1,6 +1,6 @@
 package com.Lokesh.BasicInterviewQuestions;
 import java.util.*;
-public class anil {
+public class anilPrime {
     public static void main(String[] args) {
         int n;
         Scanner sc = new Scanner(System.in);
