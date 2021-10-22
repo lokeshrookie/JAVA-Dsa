@@ -8,7 +8,7 @@ int[] array = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 int index = 3;
 System.out.println(remove(array, index));
 	}
-	static String remove(int arr[], int index){
+	static String remove(int[] arr, int index){
 	    for(int i = index; i<=arr.length-1; i++){
 	    	if(i == arr.length - 1){
 	    		continue;
