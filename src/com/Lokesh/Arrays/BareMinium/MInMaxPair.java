@@ -1,3 +1,5 @@
+package com.Lokesh.Arrays.BareMinium;
+
 // import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
 // import java.util.Scanner;
 public class MInMaxPair 
