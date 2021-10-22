@@ -1,13 +1,13 @@
 package com.Lokesh.Arrays.BareMinium;
 
-// import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
-// import java.util.Scanner;
+import java.util.Arrays;
+
 public class MInMaxPair 
 {
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5};
         int size  = arr.length;
-        System.out.println(getMinMax(arr, size));
+        System.out.println(Arrays.toString(getMinMax(arr, size)));
     }
     static int[] getMinMax(int[] arr, long n)  
     {
@@ -18,17 +18,12 @@ public class MInMaxPair
         if(arr[i] < min){
             min = arr[i];
         }
-        else{
-            continue;
-        }
+
     }
     //loop for finding max
     for(int i = 0; i<n; i++){
         if(arr[i] > max){
             max = arr[i];
-        }
-        else{
-            continue;
         }
     }
     // String output = 
