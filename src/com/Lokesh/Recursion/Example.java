@@ -11,6 +11,7 @@ public class Example {
         if(n==10){
             return;
         }
+        //This is tail recutsion
          print(n+1);
     }
 
