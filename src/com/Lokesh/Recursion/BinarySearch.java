@@ -1,9 +1,5 @@
 package com.Lokesh.Recursion;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Collections;
-
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {-232, -23, 0, 1, 34, 543, 4534 , 980856};
