@@ -18,6 +18,7 @@ public class BinarySearch {
             return -1;
         }
         int m = s + (e-s)/2;
+        //base condition
         if(arr[m] == target){
             return m;
         }
