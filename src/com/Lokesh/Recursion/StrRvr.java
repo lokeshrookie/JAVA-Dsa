@@ -1,6 +1,5 @@
 package com.Lokesh.Recursion;
 
-import java.util.Scanner;
 
 public class StrRvr {
     public static void main(String[] args) {
