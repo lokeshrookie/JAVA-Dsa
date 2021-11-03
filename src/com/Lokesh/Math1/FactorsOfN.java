@@ -11,5 +11,7 @@ public class FactorsOfN {
             }
         }
     }
-
 }
+/*
+Time Complexity:     O(N).
+ */
