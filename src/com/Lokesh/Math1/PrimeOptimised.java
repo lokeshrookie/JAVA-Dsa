@@ -1,4 +1,4 @@
-package com.Lokesh.BasicPrograms;
+package com.Lokesh.Math1;
 
 import java.util.Scanner;
 
