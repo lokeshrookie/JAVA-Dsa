@@ -1,5 +1,4 @@
 package com.Lokesh.Math1;
-
 public class Lcm_Gcd {
     public static void main(String[] args) {
         System.out.println("gcd is: "+ gcd(44,22));
