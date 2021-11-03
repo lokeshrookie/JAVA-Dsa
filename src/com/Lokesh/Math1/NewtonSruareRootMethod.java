@@ -19,7 +19,7 @@ public class NewtonSruareRootMethod {
     }
 }
 
-/* Time  Complexity:
+/* Time   Complexity:
     O((logN F(N))
 
  */
