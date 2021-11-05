@@ -1,7 +1,7 @@
 package com.Lokesh.linkedlist;
 
 public class AddingAtBeginning {
-        public static void main(String args[]){
+        public static void main(String[] args){
             LinkedList1 list = new LinkedList1();
             list.addAtEnd("Milan");
             list.addAtEnd("Venice");
@@ -59,10 +59,7 @@ class LinkedList1 {
             //Make the new node as the tail
             this.tail=node;
         }
-
     }
-
-
     public void addAtBeginning(String data){
         Node node = new Node(data);
         //Implement your code here
@@ -74,7 +71,6 @@ class LinkedList1 {
             this.head = node;
         }
     }
-
     public void display(){
         Node temp = this.head;
         while(temp != null){
