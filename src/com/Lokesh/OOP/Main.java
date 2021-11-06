@@ -17,7 +17,6 @@ public class Main {
         System.out.println(aparna.name);
         System.out.println(aparna.number);
         System.out.println();
-
         Student Lokesh = new Student("lokesh", 32);
         System.out.println("This is two parameter constructor");
         System.out.println(Lokesh.name);
@@ -35,8 +34,7 @@ class Student {
         this.name = "lokesh";
         this.number = 29;
     }
-
-
+    
     Student(String name, int number) {
         this.name = name;
         this.number = number;
