@@ -12,7 +12,6 @@ public class Calc2 {
              s.close();
             char op = s.next().trim().charAt(0);
             if(op == '+' || op == '-' || op == '*' || op == '/'){
-
                 if(op == '+'){
                     ans = num1 + num2;
                 }
