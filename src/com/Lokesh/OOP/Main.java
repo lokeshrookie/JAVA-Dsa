@@ -12,7 +12,6 @@ public class Main {
         System.out.println(Default.name);
         System.out.println(Default.number);
         System.out.println();
-
         Student aparna = new Student("Aparna");
         System.out.println("Single parameter constructor");
         System.out.println(aparna.name);
