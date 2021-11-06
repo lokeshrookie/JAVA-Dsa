@@ -19,7 +19,7 @@ public class Fibonacci {
             a = b;
             b = temp  ;
             count++;
-           // System.out.println(b);
+           //System.out.println(b);
         }
         System.out.println(b);// to print fibonacci series, uncomment the above two;
         // lines and comment this one
