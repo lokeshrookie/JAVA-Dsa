@@ -17,5 +17,5 @@ public class ReverseNumber {
 
     }
 }
-// int num = 12345;
+//int num = 12345;
 
