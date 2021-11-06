@@ -11,6 +11,7 @@ public class NthMagicNumber {
             ans = ans + ( last * base);
             base = base * 5;
         }
+
         System.out.println(ans);
     }
 }
