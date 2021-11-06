@@ -34,7 +34,6 @@ class Student {
         this.name = "lokesh";
         this.number = 29;
     }
-    
     Student(String name, int number) {
         this.name = name;
         this.number = number;
