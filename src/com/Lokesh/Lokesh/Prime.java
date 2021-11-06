@@ -25,7 +25,7 @@ public class Prime {
 
                     return;
                 }
-                c = c + 1; /// c++
+                c = c + 1; ///c++
             }// end of while
             if(c * c > n ) System.out.println("Prime");
         }
