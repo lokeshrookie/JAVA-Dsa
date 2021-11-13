@@ -78,7 +78,4 @@ public class LinearSearch {
         return findAllIndex(arr, target, index+1);
     }
 
-
-
-
 }
