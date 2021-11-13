@@ -1,4 +1,4 @@
-package TESTER;
+package com.Lokesh;
 
 import java.util.HashMap;
 public class HashMap2 {
