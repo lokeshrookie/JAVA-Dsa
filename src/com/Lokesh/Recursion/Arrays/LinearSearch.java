@@ -1,5 +1,8 @@
 package com.Lokesh.Recursion.Arrays;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class LinearSearch {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
@@ -7,6 +10,9 @@ public class LinearSearch {
         System.out.println(findIndex(arr, 3 , 0));
         System.out.println(linear(arr, 3, 0));
         System.out.println(findIndexLast(array, 33, arr.length-1)); //checking from last
+
+        System.out.println(findAllIndex(arr, 4,0));
+        System.out.println(list);
 
     }
     static  boolean linear(int[] arr , int target , int index){
@@ -40,4 +46,17 @@ public class LinearSearch {
             return findIndexLast(arr, target, index-1);
         }
     }
+
+    //find all the indices which matches the target
+    static ArrayList<Integer> list  = new ArrayList<>();
+    static int findAllIndex(int[] arr, int target , int index){
+        if(index == arr.length){
+            return  -1;
+        }
+        if(arr[index] == target){
+            list.add(index);
+        }
+        return findAllIndex(arr, target, index+1);
+    }
+
 }
