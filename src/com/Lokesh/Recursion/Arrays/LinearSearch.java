@@ -67,7 +67,7 @@ public class LinearSearch {
 
 
     //find all the indices which matches the target
-    static ArrayList<Integer> list  = new ArrayList<>();
+    static ArrayList<Integer> list  = new ArrayList<>( );
     static int findAllIndex(int[] arr, int target , int index){
         if(index == arr.length){
             return  -1;
