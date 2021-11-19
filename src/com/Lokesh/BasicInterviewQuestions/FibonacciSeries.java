@@ -1,11 +1,12 @@
-package com.Lokesh.BasicInterviewQuestions
+package com.Lokesh.BasicInterviewQuestions;
 public class FibonacciSeries{
   public static void main(String[] args) {
         // fibo(7);
         int n = 10;
-        for (int i=1;i<=n ;i++ ){
-            System.out.println(fibo(i));
-        } 
+//        for (int i=0;i<n ;i++ ){
+//            System.out.println(fibo(i));
+//        }
+      System.out.println(fibo(0));
     }
     
     
