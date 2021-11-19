@@ -1,0 +1,73 @@
+
+Linear Search:
+
+                    for(int i = 0; i<arr.length; i++){
+                        if(arr[i] == target){
+                            return i; // found, then print index.
+                        }
+                    }
+                    return -1;
+                    // print not found.
+
+
+Binary Search:
+
+                    int start = 0;
+                    int end = arr.length;
+                    while(start < end){
+                        int mid = start + ( end - start )/2
+                        if(arr[mid] == target){
+                            return mid;
+                        }
+                        else if(target < arr[mid]){
+                            end = mid -1;
+                        }
+                        else{
+                            start = mid + 1;
+                        }
+                    }
+
+
+
+
+
+
+
+Sorting:
+
+      Bubble Sorting:  private static int[] bubble(int[] arr) {
+                            for (int i = 0; i < arr.length; i++) {
+                                for (int j = 1; j < arr.length; j++) {
+                                    if(arr[j] < arr[j-1]){
+                                        int temp = arr[j];
+                                        arr[j] = arr[j-1];
+                                        arr[j-1]  = temp;
+
+                                    }
+
+                                }
+                            }
+                            return arr;
+                        }
+
+    Selection Sort:
+
+
+
+
+
+
+
+
+    InsertionSort:
+
+
+
+
+
+
+
+    Cyclic Sort:
+
+
+
