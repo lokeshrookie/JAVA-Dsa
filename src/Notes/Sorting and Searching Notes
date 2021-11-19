@@ -52,6 +52,23 @@ Sorting:
 
     Selection Sort:
 
+    1. Selecting the largest element and putting it at the correct index by swapping.
+    2. last index will be sorted first. then the next largest element and so no...
+    3.
+
+    Complexity:
+        finding max element: n is size . (n-1) comparisons needed.
+                 n(n-1)/2
+        O(N)^2
+        best case : O(N)^2
+        worst case: O(N)^2
+        stable : NO
+        performs well at small cases.
+
+
+
+
+
 
 
 
