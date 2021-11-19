@@ -1,5 +1,5 @@
 package com.Lokesh.BasicInterviewQuestions;
-public class FibonacciSeries{
+public class FibonacciSeriesRecursion {
   public static void main(String[] args) {
         // fibo(7);
         int n = 10;
