@@ -1,44 +1,31 @@
 package TESTER;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
-        //linearSearch
-        Scanner s = new Scanner(System.in);
-        int[] arr = {1,2,3,4,5,6,7};
-        int target = s.nextInt();
-//        System.out.println(linear(arr,target));
-        System.out.println(binary(arr,target));
+        String s1 = "lol";
+        String s2 = "lo";
+        System.out.println(isPalindrome(s1));
     }
 
-    private static int binary(int[] arr, int target) {
-        int start = 0;
-        int end = arr.length-1;
-        while(start <= end){
-            int mid = start + (end - start)/2;
-            if(target == arr[mid]){
-                return  mid;
-            }
-            else if(target < mid){
-                end = mid -1;
-            }
-            else
-                start = mid + 1;
+    static boolean isPalindrome(String str)
+    {
+        // Pointers pointing to the beginning
+        // and the end of the string
+        int i = 0, j = str.length() - 1;
+        // While there are characters to compare
+        while (i < j) {
+            // If there is a mismatch
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+            // Increment first pointer and
+            // decrement the other
+            i++;
+            j--;
         }
-        return  -1;
-
+        // Given string is a palindrome
+        return true;
     }
-
-
-//    private static int linear(int[] arr, int target) {
-//        int i ;
-//        for ( i = 0; i < arr.length; i++) {
-//
-//            if(target == arr[i]){
-//                return i;
-//            }
-//        }
-//        return -1;
-//    }
 }

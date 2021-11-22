@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 public class SelectionSortKunal {
     public static void main(String[] args) {
-        int[] arr = {-1121  ,3, -52, 0, 12, 1, 6};
+        int[] arr = {4,11,1,6,-86,0};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -29,6 +29,7 @@ public class SelectionSortKunal {
             //swap this with maxIndex.
             int maxIndex = getMax(arr, 0, last);
             swap(arr, maxIndex, last);
+
         }
     }
 

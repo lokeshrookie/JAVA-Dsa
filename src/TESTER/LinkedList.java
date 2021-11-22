@@ -1,10 +1,7 @@
 package TESTER;
-
-
 class  Node{
     private String data;
     private Node next;
-
     public Node(String data){
         this.data = data;
     }
@@ -20,17 +17,13 @@ class  Node{
     public  Node getNext(){
         return this.next;
     }
-
 }
-
 public class LinkedList {
     private  Node head;
     private  Node tail;
-
     public  Node getHead(){
         return this.head;
     }
-
     public  Node getTail(){
         return  this.tail;
     }
@@ -46,7 +39,6 @@ public class LinkedList {
         this.tail = node;
         //if the list is not empty, add the element at the end
     }
-
     public void addAtBeginning(String data){
         Node node = new Node(data);
         //Implement your code here
@@ -58,7 +50,6 @@ public class LinkedList {
             this.head = node;
         }
     }
-
     public void display(){
         Node temp = this.head;
         while(temp != null){
@@ -66,10 +57,8 @@ public class LinkedList {
             temp = temp.getNext();
         }
     }
-
     public  Node find(String data){
         Node temp = this.head;
-
         while(temp != null){
             if(temp.getData().equals(data)){
                 return temp;
@@ -99,7 +88,6 @@ public class LinkedList {
                 System.out.println("Node not found");
         }
     }
-
     public void delete(String data) {
         // Check if the list is empty,
         if (this.head == null)
@@ -160,7 +148,6 @@ class Tester {
         list.insert("added", "40");
         list.delete("60");
         list.display();
-
     }
 }
 
