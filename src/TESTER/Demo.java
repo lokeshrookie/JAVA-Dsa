@@ -4,20 +4,61 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Demo {
-    public static void main(String[] args) {
-        System.out.println(args);
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int row = s.nextInt();
+        int column = s.nextInt();
+        int arr[][] = new int[row][column];
+        int arr2[][] = new int[row][column];
+        for(row = 0; row< arr.length; row++){
+            for(column = 0; column< arr[row].length; column++){
+                arr[row][column] = s.nextInt();
+            }
+        }
+        for(row = 0; row< arr.length; row++){
+            for(column = 0; column< arr[row].length; column++){
+                arr2[row][column] = s.nextInt();
+            }
+        }
 
-//        String s1 = "lol";
-//        String s2 = "lo";
-//        System.out.println(isPalindrome(s1));
-//        for (int i = 1000; i <9999; i++)
-//        {
-//            if(isArmstrong(i)) System.out.print(i + " ");
-//        }
-//        System.out.println(isArmstrong(1634));
-//        System.out.println(isArmstrong2(1634));
-//        System.out.println(countNums(123));
-//        System.out.println(countNums(123455));
+
+        for(row = 0; row< arr.length; row++){
+            for(column = 0; column< arr[row].length; column++){
+                arr[row][column] = arr[row][column] * arr2[row][column];
+            }
+        }
+
+        System.out.println(" the additon is : ");
+        for(row = 0; row< arr.length; row++){
+            for(column = 0; column< arr[row].length; column++){
+                System.out.print(arr[row][column] + " ");
+            }
+            System.out.println();
+        }
+
+
+    }
+
+//
+    static  void twoSort(int[][] arr, int row, int column){
+        for(row = 0; row < arr.length; row++)
+            for (column = 0; column < arr[row].length; column++)
+                for (int i = 0; i<arr.length; i++){
+                    for(int j = 0; j<arr.length-i; j++){
+                        if(arr[row][column] < arr[i][j]){
+                            int temp = arr[row][column];
+                            arr[row][column] = arr[i][j];
+                            arr[i][j] = temp;
+                        }
+                    }
+                }
+    }
+
+    static  void swap(int[][] arr, int first, int second){
+        int temp = first;
+        first = second;
+        second = temp;
+
     }
 
     static boolean isPalindrome(String str)
@@ -108,6 +149,9 @@ public class Demo {
         }
         return  original == ans;
     }
+
+
+
 }
 
 

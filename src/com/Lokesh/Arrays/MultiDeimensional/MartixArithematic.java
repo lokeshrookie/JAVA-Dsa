@@ -1,7 +1,7 @@
 package com.Lokesh.Arrays.MultiDeimensional;
 
 import java.util.Scanner;
-public class MartixAddition {
+public class MartixArithematic {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int[][] arr1 = new int[2][2];
