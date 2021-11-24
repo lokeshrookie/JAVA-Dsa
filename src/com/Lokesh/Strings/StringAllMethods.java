@@ -75,6 +75,28 @@ package com.Lokesh.Strings;
             System.out.println("Original String " + str1);
             String str2 = "feeksforfeeks".replace('f', 'g');
             System.out.println("Replaced f with g -> " + str2);
+
+
+
+            //value of
+
+            String num = "124";
+            System.out.println(String.valueOf(num));
+            int a = 55;
+            int b = Integer.parseInt(num);
+            int bc= Integer.getInteger("80");
+
+
+
+            int count = Integer.bitCount(100);
+            System.out.println(count);
+
+            int zeros = Integer.parseInt("-53");
+            System.out.println(zeros);
+
+
+
+//            System.out.println(a + b);
         }
     }
 
