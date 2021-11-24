@@ -7,6 +7,7 @@ public class MartixArithematic {
         int[][] arr1 = new int[2][2];
         int[][] arr2 = new int[2][2];
         int[][] add =  new int[2][2];
+
         System.out.println("Enter the elements of 1st Matrix");
         for (int row = 0; row < arr1.length; row++) {
             for (int column = 0; column < arr1[row].length; column++) {

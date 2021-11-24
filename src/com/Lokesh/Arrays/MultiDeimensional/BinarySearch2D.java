@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearch2D {
     public static void main(String[] args) {
         int[][] arr = {{1,2,3,4},{3,2,11,3},{534,2,313,4}};
-//        linear(arr, 3);/
+//        linear(arr, 3);
 //        System.out.println(linear(arr,3));
         System.out.println(Arrays.toString(linear(arr,3)));
     }
@@ -16,12 +16,10 @@ public class BinarySearch2D {
 //                    System.out.println("found");
                     return new int[]{i,j};
                 }
-
             }
         }
         return new int[]{0};
     }
-
 
     static  void binary(int[][] arr, int target){
         int start = 0;

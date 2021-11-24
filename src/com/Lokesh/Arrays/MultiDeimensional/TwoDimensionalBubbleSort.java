@@ -25,8 +25,6 @@ public class TwoDimensionalBubbleSort {
             }
             System.out.println();
         }
-
-
     }
 
 
