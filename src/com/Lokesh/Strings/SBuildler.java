@@ -20,8 +20,5 @@ public class SBuildler {
         }
         System.out.println(sbuff.toString());
 
-
-
-
     }
 }
