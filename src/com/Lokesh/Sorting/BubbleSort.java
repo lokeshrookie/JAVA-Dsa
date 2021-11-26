@@ -4,12 +4,12 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] a = {6,3,62,4,3,-1};
+        int[] a = {6,33,0,62,4,3,-1};
 //        System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(bubblesort(a)));
     }
     static int[] bubblesort(int [] arr){
-        boolean swapped = true;
+        boolean swapped = false;
         for (int i = 0; i < arr.length; i++) {
             // traversing until (lastindex -i). if i = 0, we will travese until the last index.
             //if i = 1, we will traverse until (last index - 1) only. becuse the last element was already sorted(during first try(i=0)).
@@ -20,9 +20,13 @@ public class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
+                    swapped = true;
+                    System.out.println(swapped);
                 }
             }
+
         }
+        System.out.println("Sorted list");
         return arr;
     }
 }
