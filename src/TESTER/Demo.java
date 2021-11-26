@@ -1,10 +1,17 @@
 package TESTER;
 
+import com.Lokesh.Strings.SBuildler;
+
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Demo {
     public static void main(String[] args){
+        st(7);
+//       System.out.println(replace0With1(1001));
+        System.out.println((int) (Math.random() * 101));
+        replace0With1(10010);
         Scanner s = new Scanner(System.in);
         int row = s.nextInt();
         int column = s.nextInt();
@@ -36,8 +43,20 @@ public class Demo {
             System.out.println();
         }
 
+        System.out.println("No of Digits : " + countDigits(12345678));
+
 
     }
+
+    static int countDigits(int n){
+        int count = 0;
+        while(n > 0){
+            count++;
+            n/=10;
+        }
+        return count;
+    }
+
 
 //
     static  void twoSort(int[][] arr, int row, int column){
@@ -151,6 +170,35 @@ public class Demo {
     }
 
 
+    static int  replace0with1(int n){
+            String  s =  String.valueOf(n);
+            s = s.replaceAll("0","1");
+            return Integer.parseInt(s);
+    }
+
+    static  void replace0With1(int n){
+        char[] ch = String.valueOf(n).toCharArray();
+        for(int i = 0; i<ch.length; i++){
+            if(ch[i] == '0'){
+                ch[i] ='1';
+            }
+        }
+        System.out.println(String.valueOf(ch));
+        System.out.println(Arrays.toString(ch));
+    }
+
+    static void st(int n){
+        Stack<Integer> st = new Stack<>();
+        st.push(5);
+        st.push(6);
+        st.push(7);
+        st.peek();
+        st.pop();
+        System.out.println(st);
+//        st.toArray();
+        System.out.println(st.search(5));
+
+    }
 
 }
 

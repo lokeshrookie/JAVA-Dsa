@@ -1,4 +1,7 @@
 package com.Lokesh.Sorting;
+
+import java.util.Arrays;
+
 //Selection sort
 public class SelectionSort {
     public static void main(String[] args) {
@@ -18,8 +21,6 @@ public class SelectionSort {
                 a[min] = temp;
             }
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] +" ");
-        }
+        System.out.println(Arrays.toString(a));
     }
 }
