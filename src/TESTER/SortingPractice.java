@@ -13,17 +13,13 @@ public class SortingPractice {
 //        System.out.println(selection(arr));
 //        System.out.println(selection(arr));
 //        System.out.println(Arrays.toString(selection(arr)));
-
 //        insertion2(arr);
 //        bubble2(arr);
-        System.out.println(Arrays.toString(arr));
-
-//       insertion(arr);
+          System.out.println(Arrays.toString(arr));
+//        insertion(arr);
 //        System.out.println(Arrays.toString(arr));
-
 //        cyclic(cycarr);
 //        System.out.println(Arrays.toString(cycarr));
-
     }
 
     // BUBBLE SORT
@@ -159,31 +155,3 @@ public class SortingPractice {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
