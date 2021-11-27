@@ -23,10 +23,9 @@ public class Substring {
 
                     // 3rd loop is for printing from
                     // starting point to ending point
-                    for (int k = i; k <= j; k++) {
+                    for (int k = i; k <=j; k++) {
                         System.out.print(s.charAt(k));
                     }
-
                     // changing the line after printing
                     // from starting point to ending point
                     System.out.println();
