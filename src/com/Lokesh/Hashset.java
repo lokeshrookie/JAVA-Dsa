@@ -1,8 +1,5 @@
 package com.Lokesh;
 
-import com.Lokesh.Hashmaps.Hashmap;
-
-import java.nio.CharBuffer;
 import java.util.HashSet;
 
 public class Hashset {
