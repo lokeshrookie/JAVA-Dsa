@@ -10,7 +10,6 @@ public class HCF {
         System.out.println(hcf(a,b));
 //        hcf(a,b);
     }
-
     private static int hcf(int a, int b) {
         int hcf = Math.min(a,b);
         while (true){
@@ -22,3 +21,4 @@ public class HCF {
         }
     }
 }
+
