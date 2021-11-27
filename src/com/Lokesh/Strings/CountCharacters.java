@@ -19,7 +19,6 @@ public class CountCharacters {
             if(lower.charAt(i) == 'a' || s.charAt(i) == 'e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'){
                 countVowels++;
             }
-
         }
         System.out.println("Total alphabets are : " + countalpha);
         System.out.println("No of digits is " + countNums);
