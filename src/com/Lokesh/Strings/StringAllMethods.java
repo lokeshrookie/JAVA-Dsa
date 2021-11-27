@@ -2,6 +2,12 @@ package com.Lokesh.Strings;
 // import java.io .*;
 // import java.util .*;
 
+
+/**
+ *  String Split == like toChar arry. it converts string to char array including all white spaces
+ *  .trim == it removes all the white spaces before and after the string
+ *
+ */
     public class StringAllMethods {
 //    public static void main(String[] args) {
 //
