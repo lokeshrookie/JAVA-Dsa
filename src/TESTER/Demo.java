@@ -8,7 +8,12 @@ import java.util.Stack;
 
 public class Demo {
     public static void main(String[] args){
-        st(7);
+
+
+        String str = "Hello";
+        System.out.println(duplicates(str));
+        System.exit(0);
+
 //       System.out.println(replace0With1(1001));
         System.out.println((int) (Math.random() * 101));
         replace0With1(10010);
@@ -200,6 +205,26 @@ public class Demo {
 
     }
 
+    /////////
+    public static String duplicates(String S){
+
+        StringBuilder builder = new StringBuilder();
+
+        int count = 0;
+
+        for (int i = 0; i < S.length(); i++) {
+
+            while(i < S.length() - 1 && S.charAt(i) == S.charAt(i+1)){
+
+                count = 0;
+                count++;
+                i++;
+            }
+
+            builder.append(S.charAt(i));
+        }
+        return builder.toString();
+    }
 }
 
 

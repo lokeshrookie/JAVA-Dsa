@@ -1,0 +1,4 @@
+1. How To change first letter of the word to uppercase ?
+        Change first letter using "substring(0,1).toUpperCase()" function and concatenate with
+        remaining string using substring(1,String.length()).
+

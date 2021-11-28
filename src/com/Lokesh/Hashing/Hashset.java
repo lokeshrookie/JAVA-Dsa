@@ -3,6 +3,7 @@ package com.Lokesh.Hashing;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Hashset {
     public static void main(String[] args) {
@@ -13,6 +14,13 @@ public class Hashset {
         }
         System.out.println(Arrays.toString(hashSet.toArray()));
 
+        Iterator iterator = hashSet.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next() + " ");
+        }
+        while (iterator.hasNext()){
+            System.out.println(iterator.next() + " ");
+        }
 
     }
 
