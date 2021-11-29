@@ -6,8 +6,7 @@ import java.util.Collections;
 
 public class Amazon1 {
     public static void main(String[] args) {
-        
-        
+
     }
 
 
