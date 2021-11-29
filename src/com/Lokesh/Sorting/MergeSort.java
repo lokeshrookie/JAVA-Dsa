@@ -105,12 +105,11 @@ public  class MergeSort{
             k++;
         }
         // copying the values from mix array to original array.
-
+        // copy all the array elements of new array(mix) to the old array(arr)
         for(int l = 0; l<mix.length; l++){
             arr[start+l] = mix[l];
         }
     }
-
 }
 
 
