@@ -6,7 +6,7 @@ package com.Lokesh.Sorting;
 // *          IN SELECTION SORT, FOR EVERY ITERATION, LARGEST ELEMENT WILL BE SWAPPED WITH THE LAST INDEX.
 // * Algorithm:
 // * 1. // * 1. select the index of largest element.
-// * 2. select the index of largest element.   (last element = arr.length-i-1)
+// * 2. select the last index .   (last element = arr.length-i-1)
 // * 3.swap largest element with to the last element.
 // * 4.then select the next largest element using index and swap the element with next largest index.
 // *
@@ -42,17 +42,16 @@ public class SelectionSortKunal {
     }
 
 
-
-
-    private static int getMax(int[] arr, int start, int end){
-        int max = start; // initially max = 0.
-        for (int i = start; i <=end ; i++) {
-            if(arr[max] < arr[i]){
-                max = i;
+    private static int getMax(int[] arr, int first, int last){
+        int max = first;
+        for(int i = first; i<=last; i++){
+            if(arr[i] > arr[max]){
+                max  = i;
             }
         }
         return max;
     }
+
 
 
 }
