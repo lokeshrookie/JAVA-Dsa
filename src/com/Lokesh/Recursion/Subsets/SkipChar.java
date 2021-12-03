@@ -11,7 +11,7 @@ package com.Lokesh.Recursion.Subsets;
  *  4. In this way we are removing the selected character in every function/method call.
  *
  */
-public class Main {
+public class SkipChar {
     public static void main(String[] args) {
 
 
