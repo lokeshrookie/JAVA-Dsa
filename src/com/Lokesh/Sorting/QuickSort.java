@@ -18,8 +18,6 @@ import java.util.Arrays;
  *
  * NOTE: if the array is sorted, then it will try to sort it even. (Like MergeSort).
  *
- *
- *
  */
 public class QuickSort {
     public static void main(String[] args) {
@@ -75,6 +73,7 @@ public class QuickSort {
 
 
     static  void sort(int[] arr, int low, int high){
+
         if(low >= high){
             return;
         }
