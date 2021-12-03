@@ -1,4 +1,4 @@
-package com.Lokesh.AdvancedDataStructures.Tree;
+package com.Lokesh.AdvancedDataStructures.Trees;
 
 public class BinaryTree {
     public static void main(String[] args) {
