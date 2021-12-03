@@ -15,8 +15,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        skipchar("", "abbcca" );
-//        System.out.println(skipchar(s,c));
+//        skipchar("", "abbcca" );
+        System.out.println(skipchar("abbccaa"));
     }
     //skip a character
     static void skipchar(String p, String up){
@@ -32,4 +32,29 @@ public class Main {
             skipchar(p + ch, up.substring(1));
         }
     }
+
+    //substring with return value String
+    static String skipchar(String up){
+        if(up.isEmpty()){
+            return "";
+        }
+        char ch = up.charAt(0);
+        if(ch == 'a'){
+            return skipchar(up.substring(1));
+        }
+        else{
+            return ch + skipchar(up.substring(1));
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
