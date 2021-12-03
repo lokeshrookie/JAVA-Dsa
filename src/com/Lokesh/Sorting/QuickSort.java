@@ -2,6 +2,12 @@ package com.Lokesh.Sorting;
 
 import java.util.Arrays;
 
+/*
+    TIME COMPLEXITY:
+    WORST CASE: O(N)^2
+    BEST CASE: O(N LOG N)
+ */
+
 /**
  * Quick sort using two pointer method
  *
@@ -19,12 +25,12 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1,0,-8,-1};
         int[] arr2 = {1,2,3,4,5};
-        quickSort(arr2, 0, arr2.length-1);
+        sort(arr2, 0, arr2.length-1);
         System.out.println(Arrays.toString(arr2));
     }
 
-    // low and high denotes which part we are working on.
-    // start and end is for swapping in that part.
+    // low and high are the main one's. Which tells us which part of array we are working on.
+    // start and end are just for swapping.
     private static void quickSort(int[] arr, int low, int high) {
           if(low >= high){
               return ;
@@ -47,7 +53,9 @@ public class QuickSort {
               while (arr[end] > pivot){
                   end--;
               }
-              // check if the array is sorted. if sorted, then above condi
+              // check if the array is sorted. if sorted, the start pointer will move to the right side
+              // and end pointer will move to the left side of the array.
+
               // if any violations, then swap left side element with right side element.
               if(start  <= end){
                   int temp = arr[start];
@@ -59,9 +67,74 @@ public class QuickSort {
           }
 
           //now pivot is at correct index. then swap two halves now.
-        quickSort(arr, low, end);
-          quickSort(arr, start , high);
+        quickSort(arr, low, end); //    to check if the left side elements are sorted
+          quickSort(arr, start , high); // to check the sorting of right side elements
+
+    }
+
+
+    static  void sort(int[] arr, int low, int high){
+        if(low >= high){
+            return;
+        }
+        // take start and end for swapping purpose
+        int start = low;
+        int end = high;
+        int mid = start + (end - start)/2;
+
+        //select pivot
+        int pivot = arr[mid];
+
+        while(start <= end){
+            while(arr[start] < pivot){
+                start++;
+            }
+            while(arr[end] > pivot){
+                end--;
+            }
+
+            if(start <= end){
+                int temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                start++;
+                end--;
+            }
+
+        }
+
+        sort(arr, low, end);
+        sort(arr, start, high);
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
