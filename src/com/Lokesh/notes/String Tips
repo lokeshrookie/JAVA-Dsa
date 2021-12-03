@@ -2,3 +2,5 @@
         Change first letter using "substring(0,1).toUpperCase()" function and concatenate with
         remaining string using substring(1,String.length()).
 
+2. In finding duplicates, we have to compare each character with the all the elements. when doing this, we cant compare string with character.
+    So, we can convert the single String to character using "Character.toString()" method.
