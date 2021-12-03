@@ -35,7 +35,9 @@ public class QuickSort {
           if(low >= high){
               return ;
           }
-          int start = low;
+
+        // take start and end for swapping purpose
+        int start = low;
           int end = high;
           int mid = start + (end - start)/2;
 
@@ -77,12 +79,10 @@ public class QuickSort {
         if(low >= high){
             return;
         }
-        // take start and end for swapping purpose
         int start = low;
         int end = high;
         int mid = start + (end - start)/2;
 
-        //select pivot
         int pivot = arr[mid];
 
         while(start <= end){
@@ -102,11 +102,8 @@ public class QuickSort {
             }
 
         }
-
         sort(arr, low, end);
         sort(arr, start, high);
-
-
     }
 }
 
