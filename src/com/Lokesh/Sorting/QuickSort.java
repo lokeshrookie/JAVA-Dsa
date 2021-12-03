@@ -71,7 +71,6 @@ public class QuickSort {
           //now pivot is at correct index. then swap two halves now.
         quickSort(arr, low, end); //    to check if the left side elements are sorted
           quickSort(arr, start , high); // to check the sorting of right side elements
-
     }
 
 
