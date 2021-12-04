@@ -1,4 +1,4 @@
-package com.Lokesh.Recursion.Subsets;
+package com.Lokesh.Recursion.SubString;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class SkipString {
         if(up.isEmpty()){
             return "";
         }
-        if(up.startsWith("app") && !up.startsWith("apple")){
+        if(up.startsWith("app") && !up.startsWith("apple")){ // ! used.
             return skipAppNotApple(up.substring(3));
         }else{
             return up.charAt(0)+skipAppNotApple(up.substring(1));

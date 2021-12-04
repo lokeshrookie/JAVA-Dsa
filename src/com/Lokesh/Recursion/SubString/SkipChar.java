@@ -1,4 +1,4 @@
-package com.Lokesh.Recursion.Subsets;
+package com.Lokesh.Recursion.SubString;
 
 /**
  * 1. pass processed and unprocessed strings to the method
