@@ -1,4 +1,4 @@
-package com.Lokesh.Math1.BitManipulation;
+package com.Lokesh.BitManipulation;
 
 public class IthBitOfaNumber {
     public static void main(String[] args) {

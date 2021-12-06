@@ -1,4 +1,4 @@
-package com.Lokesh.Math1.BitManipulation;
+package com.Lokesh.BitManipulation;
 
 import java.util.Scanner;
 
@@ -7,7 +7,6 @@ public class IsOdd {
         Scanner s = new Scanner(System.in);
         int number = s.nextInt();
         System.out.println(isOdd(number));
-
     }
 
     private static  boolean isOdd(int number) {
