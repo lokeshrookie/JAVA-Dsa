@@ -13,7 +13,7 @@ public class IsPrime {
 //        int n = s.nextInt();
 //        System.out.println(isPrime(n));
         for (int i = 0; i < 100; i++) {
-            System.out.println(i + " " + isPrime(i));
+            System.out.println(i + " " + prime(i));
         }
     }
 
@@ -28,5 +28,19 @@ public class IsPrime {
             }
         }
         return  true;
+    }
+
+    static  boolean prime(int n){
+        if(n < 2){
+            return false;
+        }
+        else{
+            for(int i  = 2 ; i<=Math.sqrt(n); i++){
+                if(n%i == 0){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
