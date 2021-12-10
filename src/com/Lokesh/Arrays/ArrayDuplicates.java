@@ -24,6 +24,5 @@ public class ArrayDuplicates {
         }
         System.out.println("Duplicate elements are : "  + dup);
         System.out.println("Unique elements are :" + hs.toString());
-
     }
 }
