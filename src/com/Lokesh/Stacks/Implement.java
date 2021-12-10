@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Implement {
     public static void main(String[] args) {
-
     }
 }
+
 
 class Stack {
     private int array[];
