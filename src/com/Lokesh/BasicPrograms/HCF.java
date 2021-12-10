@@ -8,6 +8,7 @@ public class HCF {
         int a = s.nextInt();
         int b = s.nextInt();
         System.out.println(hcf(a,b));
+
 //        hcf(a,b);
     }
     private static int hcf(int a, int b) {
@@ -20,5 +21,6 @@ public class HCF {
             hcf--;
         }
     }
+
 }
 

@@ -13,7 +13,7 @@ public class Lcm {
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
         int b = s.nextInt();
-        System.out.println(lcm(a,b));
+        System.out.println(lcmm(a,b));
     }
 
     private static int lcm(int a, int b) {
@@ -29,6 +29,20 @@ public class Lcm {
                 lcm++;
             }
 
+        }
+    }
+    private static int lcmm(int a, int b){
+        if(a == 0|| b == 0){
+            return 0;
+        }
+        int lcm = Math.max(a,b);
+        while(true){
+            if(lcm%a == 0 && lcm%b == 0){
+                return lcm;
+            }
+            else{
+                lcm++;
+            }
         }
     }
 }
