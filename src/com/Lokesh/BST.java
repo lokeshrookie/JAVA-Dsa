@@ -7,7 +7,9 @@ import java.util.Scanner;
 public class BST {
 
 
-    //INSERT METHOD
+
+
+//    INSERT METHOD
     public TreeNode insert(TreeNode root, int newData){
         //check if the root is null. if yes, then create root node with this data. This will be the first element in the tree.
         if(root == null){
@@ -28,6 +30,8 @@ public class BST {
         // then we weill return the root. The root is the Tree where we have inserted the newData.
         return root;
     }
+
+
 
     //SEARCH
     public TreeNode search(TreeNode root, int dataToSearch){

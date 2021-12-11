@@ -80,6 +80,43 @@ public class SLL {
         System.out.println("END");
     }
 
+    // ---Alternate way to Display the LinkedList using for loop.
+//    public void display(){
+//        Node temp = head;
+//        for(int i = 1; i<=size; i++){
+//            System.out.print(temp.value + " -> ");
+//            temp = temp.next;
+//        }
+//        System.out.println("End");
+//    }
+
+    public int deleteLast(){
+        if(size <=1 ){
+            deleteFirst();
+        }
+//        int var = tail.value;
+//        Node temp = head;
+//        for(int i = 1; i<size-1;i++){
+//            temp = temp.next;
+//        }
+//        tail = temp;
+//        tail.next = null;
+//        return  var;
+        Node secondLast = get(size - 2);
+        int val = tail.value;
+        tail = secondLast;
+        tail.next = null;
+        return val;
+    }
+
+    private Node get(int index) {
+        Node temp = head;
+        for(int i = 1; i<index; i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
 
 
 
@@ -98,7 +135,6 @@ public class SLL {
             this.next = next;
         }
     }
-
 }
 
 
