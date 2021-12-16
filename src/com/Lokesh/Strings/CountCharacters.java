@@ -15,7 +15,6 @@ public class CountCharacters {
             if(s.charAt(i) >='0' && s.charAt(i) <='9'){
                 countNums++;
             }
-
             if(lower.charAt(i) == 'a' || s.charAt(i) == 'e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'){
                 countVowels++;
             }

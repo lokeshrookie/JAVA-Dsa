@@ -12,6 +12,10 @@ public class HCF {
 //        hcf(a,b);
     }
     private static int hcf(int a, int b) {
+        // if any num is zero, return another number.
+        if(a == 0 || b == 0){
+            return Math.max(a,b);
+        }
         int hcf = Math.min(a,b);
         while (true){
             if(a%hcf == 0 && b%hcf == 0){
@@ -21,6 +25,5 @@ public class HCF {
             hcf--;
         }
     }
-
 }
 

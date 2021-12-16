@@ -25,51 +25,20 @@ public class Armstrong {
         return sum == original;
     }
 
-    static  boolean armstrong2(int n ){
-        int org  = n;
+    static boolean armstrong2(int n){
+        int org = n;
         int sum = 0;
-        while (n>0){
-            int rem = n%10;
-            n = n/10;
-            sum = sum + rem * rem * rem;
+        int digits = 0;
+        while(n>0){
+            digits++;
+            n/=10;
         }
-        return sum == org;
+        n = org;
+        while(n > 0){
+            int rem  = n%10;
+            sum = sum + (int)Math.pow(rem,digits);
+            n/=10;
+        }
+        return org == sum;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }
