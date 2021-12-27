@@ -2,6 +2,19 @@ package com.Lokesh.Sorting;
 
 import java.util.Arrays;
 
+/**
+ * Cyclic Sort: To improve time complexity
+ *
+ * to sort a continues numbers
+ * used to sort the numbers in the range of 1 to N.
+ *
+ * What is cyclic sort
+ *
+ * 1. First assume the correct index of every number.
+ * 2. Correct index = arr[i] - 1. because, we use number starting form 1.
+ * so, to get the element at an index , we can get it by
+ */
+
 public class CycleSort {
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1};

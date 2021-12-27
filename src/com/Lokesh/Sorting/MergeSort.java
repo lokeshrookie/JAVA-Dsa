@@ -2,6 +2,13 @@ package com.Lokesh.Sorting;
 
 import java.util.Arrays;
 
+/**
+ *  1. Divide the array into two parts
+ *  2. Sort both the sub arrays using recursion
+ *  3. Merge the two sorted sub arrays.
+ *
+ */
+
 public  class MergeSort{
     public static void main(String[] args) {
         int[] arr = {23,0,-23,-1,34,232,23123,-2323,2};

@@ -2,13 +2,16 @@ package methods;
 
 public class addition {
     public static void main(String[] args) {
-        System.out.println(sum(54,98));
+//        System.out.println(sum(54,98));
 //        System.out.println(name("paw"));
 //        name("pavan sankar");
 //        name("lokesh");
 //        swap(5,6);
 //        isPrime(98);
-        System.out.println(isPrime(98));
+        for(int i = 1; i<=100; i++){
+            System.out.println(i + "  " + isPrime(i));
+
+        }
 
 
     }
@@ -27,12 +30,14 @@ public class addition {
         System.out.println(number1 + " " + number2);
     }
     static boolean isPrime(int num){
-        int count = 0;
-        for(int i = 2; i <= num; i++){
+        if(num <2){
+            return false;
+        }
+        for(int i = 2; i <= num/2; i++){
             if (num%i == 0){
-                count++;
+                return false;
             }
         }
-        return count!=0;
+        return true;
     }
 }

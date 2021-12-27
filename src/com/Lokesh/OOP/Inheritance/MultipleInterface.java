@@ -11,11 +11,11 @@ public class MultipleInterface{
  interface  A{
       int a = 5;
 }
-interface  B extends  A{
+interface  B{
       int b = 6;
 
 }
-class  C implements B{
+class  C implements A,B{
     public static void main(String[] args) {
         System.out.println(a + b);
     }

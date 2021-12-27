@@ -6,13 +6,8 @@ public class Armstrong {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int number = s.nextInt();
-//        System.out.println(isArmstrong(number));
-        for (int i = 1; i <=number; i++) {
-            if(armstrong2(i)){
-                System.out.println(i);
-            }
-        }
-        s.close();
+        System.out.println(arm(number));
+
     }
     static boolean isArmstrong(int n) {
         int original = n;
@@ -40,5 +35,22 @@ public class Armstrong {
             n/=10;
         }
         return org == sum;
+    }
+
+    static boolean arm(int n){
+        int origianl = n;
+        int digits = 0;
+        while(n >0){
+            digits++;
+            n/=10;
+        }
+        n = origianl;
+        int sum = 0;
+        while(n > 0){
+            int rem = n%10;
+            sum = sum + (int)Math.pow(rem, digits);
+            n/=10;
+        }
+        return sum == origianl;
     }
 }

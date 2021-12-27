@@ -7,8 +7,8 @@ public class SkipString {
 //        String text = "This is apple";
 //        skipString("This is apple");
         Scanner s= new Scanner(System.in);
-        String skip = s.nextLine();
-        System.out.println(skipAppNotApple("This is apple apps in the apple phone"));
+//        String skip = s.nextLine();
+        System.out.println(skipString(" ","This is apple apps in the apple phone"));
     }
     static String skipString(String skip, String up){
         if(up.isEmpty()){

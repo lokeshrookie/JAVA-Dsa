@@ -12,6 +12,16 @@ import java.util.Arrays;
  * no of swaps reduced as compared to bubble.
  * takes less time if an array is partially sorted.
  * takes part in hybrid sorting algorithms.
+ *
+ *
+ * Definition: select an element and put this element in the correct position
+ * on left hand side
+ *
+ *   5 4 3 2 1
+ * -> After 1st pass  5 4  will be sorted as 4 5
+ * -> After 2nd pass  4 5 3 will be sorted as 3 4 5
+ *
+ *
  */
 
 public class InsertionSort {
@@ -19,7 +29,7 @@ public class InsertionSort {
 //        int[] arr = {534,-23,0,232,4,11,-1213,3};
         int[] arr = {5,4,3,2,1};
         System.out.println("Before Sorting: " + Arrays.toString(arr) );
-        insertion(arr);
+        ins(arr);
         System.out.println( "\n After Sorting: " +Arrays.toString(arr));
     }
 
@@ -49,7 +59,19 @@ public class InsertionSort {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
+    }
 
+    static void ins(int[] arr){
+        for(int i = 0; i<arr.length-1; i++){
+            for(int j = i+1; j>0; j-- ){
+                if(arr[j] < arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+
+                }
+            }
+        }
     }
 
 }

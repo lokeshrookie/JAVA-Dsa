@@ -8,12 +8,13 @@ public class FibonacciSeriesNormal {
         int n = s.nextInt();
         int a = 0;
         int b = 1;
-        int c = 0;
-        for(int i = 0; i<n-1; i++){
+        int c ;
+        for(int i = 0; i<=n; i++){
             c = a + b;
+            System.out.println(c);
             a = b;
             b = c;
         }
-        System.out.println(c);
+//        System.out.println(c);
     }
 }

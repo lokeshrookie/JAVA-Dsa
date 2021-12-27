@@ -15,10 +15,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/mm/dd");
         LocalDateTime ld = LocalDateTime.now();
         System.out.println(dtf.format(ld));
-
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println("Local Date and Time : " + localDateTime);
     }

@@ -21,12 +21,13 @@ public class BubbleSort {
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
                     swapped = true;
-                    System.out.println(swapped);
                 }
             }
-
         }
-        System.out.println("Sorted list");
+        if(swapped){
+            System.out.println("Not Sorted");
+        }
+
         return arr;
     }
 }
