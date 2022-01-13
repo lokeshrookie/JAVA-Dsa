@@ -75,6 +75,43 @@ public class QuickSort {
     static  void sort(int[] arr, int low, int high){
 
     }
+
+    static void quick(int[] arr, int low, int high){
+        if(low >= high){
+            return;
+        }
+        int s = low;
+        int e = high;
+        //  s and e for swapping comparison
+        int m = s+(e-s)/2;
+        int pivot = arr[m];
+        while(s <= e){
+            // if already sorted, not sorted again.
+            while(arr[s] < pivot){
+                s++;
+            }
+            while(arr[e] > pivot){
+                e--;
+            }
+            // swap start and end.
+            // swap if violated the condition.
+            if(s<=e){
+                int temp = arr[s];
+                arr[s] = arr[e];
+                arr[e] = temp;
+                s++;
+                e--;
+            }
+            //after swapping, s will be grater than e.
+
+        }
+        //sort both arrays.
+        //so first half array will be from low to end.(end is element next to pivot.)
+        // second half array will be start to high. (start is previous element of pivot.)
+        //pivot is at correct index. sort left and right side arrays.
+        quick(arr, low,e);
+        quick(arr, s, high);
+    }
 }
 
 
