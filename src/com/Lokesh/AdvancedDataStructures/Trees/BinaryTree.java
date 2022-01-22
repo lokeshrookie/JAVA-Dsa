@@ -11,13 +11,9 @@ public class BinaryTree {
         Node g = new Node(7);
         Node h = new Node(8);
 
+        a.right = b;
+        a.left = c;
 
-        a.left = b;
-        a.right = c;
-        b.left = d;
-        b.right = e;
-        c.left = f;
-        c.right = g;
 
         /*
                 a
@@ -27,7 +23,12 @@ public class BinaryTree {
            d   e f   g
          */
 
-        System.out.println(a.toString());
+
+//        lombok.val a1 = a;
+        System.out.println(a.val);
+        System.out.println(a.right.val);
+        System.out.println(a.left.val);
+
 
 
 
@@ -36,9 +37,9 @@ public class BinaryTree {
 }
 
 class Node{
-    private  int val;
-      Node right;
-      Node left;
+      int val;
+       Node right;
+       Node left;
 
     public Node() {
     }
@@ -48,4 +49,6 @@ class Node{
     }
 
 }
+
+
 
