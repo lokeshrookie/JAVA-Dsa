@@ -1,0 +1,5 @@
+
+Binary Tree
+1. Depth First Search (DFS):
+        TIme and Space Complexity: O(n). where n is no of nodes.
+    This algorithm can be implemented using stack.
