@@ -1,0 +1,12 @@
+linkedlist implementation:
+
+imp: During iteration, always use temporary node to point to the head
+     Because, using head directly in while loop will completely vanish the linked list.
+
+insert at any index:
+1. using for loop iterate to the element that is before to the given index.
+2. Here, we have to store the node(at given index) in next(temporary variable) to assign node.next.
+     of new node. otherwise, after adding the new node, this new node will be end of linked list. because without next
+    pointer, we can not assign the next variable in the new node.
+
+
