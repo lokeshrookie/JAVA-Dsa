@@ -1,27 +1,44 @@
 package SourceCode.linkedlist.SinglyLinkedList;
 
-
 public class SLL {
-    private  int size;
-    private  Node head;
-    private  Node tail;
+    private Node head;
+    private Node tail;
+    private int size;
+
 
     public SLL() {
         this.size = 0;
     }
+    static class Node{
+        private  int value;
+        private  Node next;
+        public Node(int value){
+            this.value = value;
+        }
+        public Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
+    }
 
-    public void insertFirst(int val){
-        Node node  = new Node(val);
+    public boolean isEmpty(){
+        return size == 0;
+    }
+
+
+    public void insertFirst(int val){ // - one edge case => empty list(after insertion, tail need to be updated i.e, tail = head )
+        Node node = new Node(val);
         node.next = head;
         head = node;
+        // if this is the only element, tail = head = this node.
         if(tail == null){
             tail = head;
         }
         size++;
     }
 
-    public void insertLast(int val){
-        if(size == 0){
+    public void  insertLast(int val){ //  - one edge case => if tail == null(one empty list), then call insertFirst();
+        if(tail == null){
             insertFirst(val);
             return;
         }
@@ -31,55 +48,71 @@ public class SLL {
         size++;
     }
 
-    public  void insert(int val, int index){
-
+    public void insert(int value, int index){ // - Two edge cases, head index or tail index;
         if(index == 0){
-            insertFirst(val);
+            insertFirst(value);
             return;
         }
         if(index == size){
-            insertLast(val);
+            insertLast(value);
             return;
         }
+        Node node = new Node(value);
         Node temp = head;
         for(int i = 1; i<index; i++){
             temp = temp.next;
         }
-        Node node = new Node(val, temp.next);
+        Node next = temp.next;
         temp.next = node;
+        node.next = next;
         size++;
     }
 
-    /**
-     *  take temp of int type to return the deleted value
-     *
-     * head = head.next;
-     * this means making head null; so linkedlist will be empty.
-     *
-     *
-     */
-    public  int  deleteFirst(){
+    public int deleteFirst(){ // - one edge case >> no elements
         int temp = head.value;
         head = head.next;
-        if(head == null) tail = null;
-        return  temp;
+        if(head == null){
+            tail = head;
+        }
+        size--;
+        return temp;
     }
 
+    public int deleteLast(){ // - one edge case >> single element, return deleteFirst.
+        if(size <= 1){
+           return deleteFirst();
+        }
+        int value = tail.value;
+        Node secondLast = getNode(size-2);
+        tail = secondLast;
+        tail.next = null;
+        size--;
+        return value;
+    }
 
+    public int delete(int index){ // deletes node at given index. two edge cases: index is 0(head index) or size-1(tail index)
+        if(index == 0){
+           return deleteFirst(); // dont forgot to return methods int required.
+        }
+        if(index == size-1){
+           return deleteLast();
+        }
+        Node previous = getNode(index -1); // we want previous. so index-1 used
+        int val = previous.next.value;
+        previous.next = previous.next.next;
+        size--;
+        return val;
+    }
 
+    //method for printing linked list elements
     public void display(){
-        if(isEmpty()){
-            System.out.println(" Empty ");
-            return;
-        }
         Node temp = head;
-        while (temp != null) {
+        while(temp != null){
             System.out.print(temp.value + " -> ");
-            temp = temp.next;
+            temp  = temp.next;
         }
-        System.out.println("END");
+        System.out.println("Linked list printed succesfully");
     }
-
     // ---Alternate way to Display the LinkedList using for loop.
 //    public void display(){
 //        Node temp = head;
@@ -90,70 +123,49 @@ public class SLL {
 //        System.out.println("End");
 //    }
 
-    public int deleteLast(){
-        if(size <=1 ){
-            deleteFirst();
+    public Node getNode(int index){ // return noe at given index. call getNode(index-1) to get previous Node.
+        if(index == 0){
+            return head;
         }
-//        int var = tail.value;
-//        Node temp = head;
-//        for(int i = 1; i<size-1;i++){
-//            temp = temp.next;
-//        }
-//        tail = temp;
-//        tail.next = null;
-//        return  var;
-        Node secondLast = get(size - 2);
-        int val = tail.value;
-        tail = secondLast;
-        tail.next = null;
-        return val;
+        if(index == size-1){ //size-1 is last index.
+            return tail;
+        }
+        Node node = head;
+        for(int i = 0; i<index; i++){
+            node = node.next;
+        }
+        return node;
     }
 
-    private Node get(int index) {
+    public Node find(int val){
         Node temp = head;
-        for(int i = 1; i<index; i++){
-            temp = temp.next;
+        while(temp != null){
+            if(temp.value == val){
+                return temp;
+            }
+            temp = temp.next; // update temp value.
         }
-        return temp;
-    }
-
-
-
-
-    public boolean isEmpty(){
-        return size==0;
-    }
-
-    private  class Node{
-        private  int value;
-        private  Node next;
-        public Node(int value) {
-            this.value = value;
-        }
-        public Node(int value, Node next){
-            this.value = value;
-            this.next = next;
-        }
+        return null; // return null if node with given value is not found.
     }
 }
-
-
-
-class Test{
+class Tester {
     public static void main(String[] args) {
-        SLL l = new SLL();
-        l.insertFirst(4);
-        l.insertFirst(3);
-        l.insertFirst(2);
-        l.insertFirst(1);
-        l.insertFirst(0);
-        l.insertLast(5);
-        l.insertLast(6);
-        l.insert(4,4);
-        l.deleteFirst();
-
-        l.display();
-        System.out.println(l.deleteFirst());
-        l.display();
+        SLL list = new SLL();
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(3);
+        list.display();
+        list.insertLast(0);
+        list.insertLast(6);
+        list.insertLast(7);
+        list.display();
+        list.insert(99, 2);
+        list.deleteFirst();
+        list.display();
+        list.deleteLast();
+        list.display();
+        System.out.println(list.delete(4)); // printed deleted value(form return).
+        list.display();
+        list.find(0);
     }
 }

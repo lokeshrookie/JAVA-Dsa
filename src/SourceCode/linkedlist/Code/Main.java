@@ -1,8 +1,10 @@
 package SourceCode.linkedlist.Code;
 
+import SourceCode.linkedlist.SinglyLinkedList.SLL;
+
 public class Main {
     public static void main(String[] args) {
-        LinkedList l = new LinkedList();
+        SLL l = new SLL();
         l.insertFirst(4);
         l.insertFirst(5);
         l.insertLast(6);
