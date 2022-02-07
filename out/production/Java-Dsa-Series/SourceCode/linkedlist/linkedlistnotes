@@ -10,7 +10,3 @@ insert at any index:
     pointer, we can not assign the next variable in the new node.
 
 
-
-getNode: This methods returns Node at given index.
-
-find: This method returns noode having the given value.
