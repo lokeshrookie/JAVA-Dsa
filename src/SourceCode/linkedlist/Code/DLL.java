@@ -12,7 +12,12 @@ public class DLL {
     public int getSize(){
         return size;
     }
-
+    public int getHead(){
+        return head.val;
+    }
+    public int getTail(){
+        return tail.val;
+    }
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
@@ -42,6 +47,9 @@ public class DLL {
     }
 
     public void insert(int val, int index){
+        if(index > size ){
+
+        }
         if(index == 0){
             insertFirst(val);
             return;
@@ -57,10 +65,9 @@ public class DLL {
             if(ind < index){
                 temp = temp.next;
             }
-            else break;
         }
 /*
-        ==> If we use for loop, we get null pointer exception when the gievn index is more than size(index not found).
+        ==> If we use for loop, we get null pointer exception when the given index is more than size(index not found).
         ==> So while loop is better for this purpose.
         for(int i = 1; i<index; i++){ // loop starts form 1. 0 is head itself.
             temp = temp.next;
@@ -68,11 +75,70 @@ public class DLL {
         temp = node;
 */
         node.next = temp.next;
-        temp.next =node;
         node.prev = temp;
+        temp.next = node;
+        if(node.next == null){
+            tail = node;
+        }
 //        node.next = temp.next.next;
 //        node.prev = temp;
         size++;
+
+    }
+
+    public int deleteFirst() { // 2 edge cases: 0 element and single element linked list.
+        if(size == 0){
+            System.out.println("empty list");
+            return -1;
+        }
+        if(size == 1){
+            int val = head.val;
+            head = null;
+            return val;
+        }
+        int val = head.val;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
+
+    public int deleteLast(){
+        if(size == 0 || size == 1){
+            return  deleteFirst();
+        }
+        Node temp = head;
+        int val = head.val;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+        temp.next  = null;
+        tail = temp;
+        return val;
+    }
+
+    public int delete(int index){
+        if(index >= size){
+            System.out.println("Index out of range");
+            return -1;
+        }
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size-1){
+            return deleteLast();
+        }
+        Node temp = head;
+        for(int i = 1; i<index; i++){
+            temp = temp.next;
+        }
+        int val = temp.val;
+        temp.next.next.prev = temp;
+        temp.next = temp.next.next;
+//        temp.next.next.prev = temp;
+        return val;
+
+
 
     }
 
