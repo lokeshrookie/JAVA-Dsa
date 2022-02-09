@@ -5,7 +5,7 @@ public class CLL {
     private Node tail;
     private int size;
 
-    public CLL(){
+    public CLL(){ // make constructor public.
         this.size = 0;
         this.head = null;
         this.tail = null;
@@ -31,10 +31,12 @@ public class CLL {
         Node node = new Node(val);
         if(size == 0){
             tail = node;
-            tail.next = node;
             head = node;
-            head.next = tail;
             tail.next = head;
+//            head.next = tail;
+//            head.next = tail;
+//            tail.next = head;
+            size++;
             return;
         }
         node.next = tail.next;
@@ -45,15 +47,16 @@ public class CLL {
 
     public int delete(int val){
         if(head.value == val){       // delete head;
-            int value = head.value;
-            tail.next = head.next;
-            head = tail.next;
-            size--;
-            if(size == 0){
-                head = null;
-                tail = null;
-            }
-            return val;
+            return deleteFirst();
+//            int value = head.value;
+//            tail.next = head.next;
+//            head = tail.next;
+//            size--;
+//            if(size == 0){
+//                head = null;
+//                tail = null;
+//            }
+//            return val;
         }
         if(tail.value == val){      //delete tail
             Node temp = head;
@@ -70,12 +73,44 @@ public class CLL {
         while(temp != head){
             if(temp.next.value == val){
                 temp.next.next = temp.next.next.next;
+                size--;
                 return temp.value;
             }
             temp = temp.next;
         }
         return -1;
     }
+
+    public int deleteFirst(){
+        if(size == 0){
+            System.out.println("Empty list. no elements to delete.");
+            return -1;
+        }
+        int val  = head.value;
+        tail.next = head.next;
+        head = head.next;
+        size--;
+        return val;
+    }
+
+    public int deleteLast(){
+        if(size  == 1){
+            return deleteFirst();
+        }
+        Node temp = head;
+        while(temp.next != tail){
+            temp = temp.next;
+        }
+
+        int val = temp.next.value;
+        temp.next = head;
+        tail = temp;
+        size--;
+        return val;
+    }
+
+
+
 
     public void display(){
         if(size == 0){
