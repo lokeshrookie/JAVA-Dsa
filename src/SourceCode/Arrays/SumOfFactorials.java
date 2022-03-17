@@ -3,7 +3,7 @@ package SourceCode.Arrays;
 import java.util.Scanner;
 
 public class SumOfFactorials {
-   static  int sum = 0;
+    static  int sum = 0;
     static int factorial = 1;
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

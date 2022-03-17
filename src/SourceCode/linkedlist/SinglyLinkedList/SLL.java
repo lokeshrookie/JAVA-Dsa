@@ -151,21 +151,9 @@ public class SLL {
 class Tester {
     public static void main(String[] args) {
         SLL list = new SLL();
-        list.insertFirst(1);
-        list.insertFirst(2);
-        list.insertFirst(3);
+        list.insert(1,0);
         list.display();
-        list.insertLast(0);
-        list.insertLast(6);
-        list.insertLast(7);
+        list.insert(2,2);
         list.display();
-        list.insert(99, 2);
-        list.deleteFirst();
-        list.display();
-        list.deleteLast();
-        list.display();
-        System.out.println(list.delete(4)); // printed deleted value(form return).
-        list.display();
-        list.find(0);
     }
 }

@@ -1,0 +1,22 @@
+
+// graph 1 ( single component)
+        3
+     /     \
+    1       4
+           /
+         6
+          \
+            8
+
+// graph 2
+            2-- 4 ( double component).
+
+
+// graph 3
+            5 -- 7
+                 |
+                 10
+
+
+BFS:traversing the adjacent nodes at first and after that we move to the next nodes.
+    FOR LOOP (1 TO N)

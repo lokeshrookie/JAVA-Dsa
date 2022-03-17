@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class BST {
 
-
-
-
 //    INSERT METHOD
     public TreeNode insert(TreeNode root, int newData){
         //check if the root is null. if yes, then create root node with this data. This will be the first element in the tree.
