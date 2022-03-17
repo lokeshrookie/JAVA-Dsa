@@ -50,4 +50,3 @@ public class ReverseTheArray {
         arr[second] = temp;
     }
 }
-
