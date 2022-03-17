@@ -5,9 +5,8 @@ import java.util.Arrays;
 public class ReverseTheArray {
     public static void main(String[] args) {
         int[] arr  = {1,2,3,4,5,6,7};
-        System.out.println(Arrays.toString(reverseArray(arr)));
+        System.out.println(Arrays.toString(reverseArray2(arr)));
     }
-
     /* Method - 1*/
     private static void reverse(int[] arr) {
         int[] arr2 = new int[arr.length];
@@ -15,7 +14,6 @@ public class ReverseTheArray {
             System.out.print(arr[i] + " ");
         }
     }
-
     /* Method 2 */
     public static int[] rev(int[] arr){
         int[] rev = new int[arr.length];
@@ -35,9 +33,21 @@ public class ReverseTheArray {
         }
         return arr;
     }
-
-
-
-
+    /* Method - 4 Using Two Pointer Method */
+    public static int[] reverseArray2(int[] arr){
+       int s = 0;
+       int e = arr.length-1;
+        while(s<e){
+            swap(arr, s, e);
+            s++;
+            e--;
+        }
+        return arr;
+    }
+    public static void swap(int[] arr, int first, int second){
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }
 }
 
