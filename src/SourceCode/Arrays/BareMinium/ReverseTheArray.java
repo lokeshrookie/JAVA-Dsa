@@ -24,7 +24,8 @@ public class ReverseTheArray {
         }
         return rev;
     }
-    /* Method - 3 Without Extra array (using temp variable) */
+    /* Method - 3 Without Extra array (using temp variable)
+    *   and formula( arr[i] will be replaced by arr[arr.length - i-1] */
     public static int[] reverseArray(int[] arr){
         for(int i = 0; i<arr.length/2; i++){
             int temp = arr[i];
@@ -34,4 +35,9 @@ public class ReverseTheArray {
         }
         return arr;
     }
+
+
+
+
 }
+

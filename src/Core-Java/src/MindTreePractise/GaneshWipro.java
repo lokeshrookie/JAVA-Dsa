@@ -8,7 +8,6 @@ public class GaneshWipro {
         int si = s.nextInt();
         int[] a = new int[si];
         for(int i = 0; i<a.length; i++){
-
             a[i] = s.nextInt();
         }
         System.out.println(ans(a));
