@@ -44,6 +44,7 @@ public class PrimeMailReads {
         return c;
     }
 
+
     public static void  one_removal(){
         Collections.sort(mails);
         for(int i = 0; i < mails.size(); ) {
