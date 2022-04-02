@@ -11,12 +11,12 @@ import java.util.Arrays;
 
 public  class MergeSort{
     public static void main(String[] args) {
-        int[] arr = {23,0,-23,-1,34,232,23123,-2323,2};
-//        mergeSort(arr);
-//        System.out.println(Arrays.toString(arr));
-//        System.out.println(Arrays.toString(mergeSort(arr)));
-        mergeSortInplace(arr, 0, arr.length);
-        System.out.println(Arrays.toString(arr));
+        int[] a = new int[]{5,4,3,2,1};
+        int[] b = new  int[]{1,2,3,4,5};
+//        System.out.println(Arrays.equals(a,b));
+        System.out.println(Arrays.toString(mergeSort(a)));
+//        System.out.println(Arrays.compare(a,1,a.length-1, b, 1,b.length-1));
+
 
     }
 
@@ -29,7 +29,7 @@ public  class MergeSort{
         int mid = length/2;
 
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));
-        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, length-1));
+        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, length));
         return merge(left, right); // return the mix[]  array.
     }
 

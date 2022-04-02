@@ -9,8 +9,9 @@ public class MergeSortPractise {
 //        mergesort(arr);
 //        System.out.println(Arrays.toString(mergesort(arr)));
 //        System.out.println(Arrays.toString(arr));
-        msIn(arr, 0, arr.length-1);
-        System.out.println(Arrays.toString(arr));
+//        msIn(arr, 0, arr.length-1);
+//        mergesort(arr);
+        System.out.println(Arrays.toString(mergesort(arr)));
     }
 
     private static int[] mergesort(int[] arr) {
