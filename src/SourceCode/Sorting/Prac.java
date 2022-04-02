@@ -6,9 +6,25 @@ public class Prac {
     public static void main(String[] args) {
         int[] arr = new int[]{5,4,3,2,1};
 //        bubble(arr);
-        System.out.println(Arrays.toString(selection(arr)));
+//        System.out.println(Arrays.toString(selection(arr)));
+        insertion(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
+    
+    
+    
+    // Insertion Sort 
+    static void insertion(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for(int j =1; j<arr.length; j++){
+                if(arr[j] < arr[j-1]){
+                    swap(arr, j, j-1);
+                }
+
+            }
+        }
+    }
 
 
     //selection sort
