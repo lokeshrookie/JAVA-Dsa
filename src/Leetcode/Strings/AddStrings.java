@@ -2,7 +2,7 @@ package Leetcode.Strings;
 
 public class AddStrings {
     public static String addStrings(String num1, String num2) {
-        // 1. add digit by one digit 2. check whether there is a carry to the end 3. check carry out of loop so we may need to append one more digit to stringbuilder
+        // 1. add digit by one digit 2. check whether there is a carry to the end 3. check carry out of loop, so we may need to append one more digit to stringbuilder
         // Time Complexity O(max(m, n))
         int carry = 0;
         StringBuilder sb = new StringBuilder();
