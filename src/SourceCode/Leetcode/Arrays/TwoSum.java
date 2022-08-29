@@ -1,4 +1,4 @@
-package Leetcode.Arrays;
+package SourceCode.Leetcode.Arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,10 +10,7 @@ public class TwoSum {
         int[] arr = {2,7,11,15};
         System.out.println("Enter the target: ");
         int target = s.nextInt();
-
         System.out.println(Arrays.toString(twoSum(arr, target)));
-
-
     }
     public static int[] twoSum(int[] arr, int target){
         HashMap<Integer, Integer> hm = new HashMap<>();
@@ -25,7 +22,7 @@ public class TwoSum {
             else{
                 hm.put(arr[i],i);
             }
-
+            System.out.println(hm);
         }
         return new int[]{0,0};
     }

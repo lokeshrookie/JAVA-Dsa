@@ -14,12 +14,8 @@ public class Hashset {
         }
         System.out.println(Arrays.toString(hashSet.toArray()));
 
-        Iterator iterator = hashSet.iterator();
-        while(iterator.hasNext()){
-            System.out.println(iterator.next() + " ");
-        }
-        while (iterator.hasNext()){
-            System.out.println(iterator.next() + " ");
+        for (Character character : hashSet) {
+            System.out.println(character + " ");
         }
 
     }

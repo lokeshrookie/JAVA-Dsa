@@ -1,4 +1,4 @@
-package Leetcode.Arrays;
+package SourceCode.Leetcode.Arrays;
 
 import javax.crypto.spec.PSource;
 import java.util.Arrays;

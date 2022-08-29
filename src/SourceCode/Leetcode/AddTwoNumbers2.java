@@ -1,4 +1,4 @@
-package Leetcode;
+package SourceCode.Leetcode;
 
 import org.w3c.dom.NodeList;
 

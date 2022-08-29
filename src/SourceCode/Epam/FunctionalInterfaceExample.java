@@ -1,5 +1,5 @@
-package Epam;
-import  java.util.*;
+package SourceCode.Epam;
+
 @FunctionalInterface
 interface Sayable{
     void say(String msg);

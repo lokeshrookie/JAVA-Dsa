@@ -1,4 +1,4 @@
-package capegemini;
+package SourceCode.capegemini;
 
 import java.util.Scanner;
 
