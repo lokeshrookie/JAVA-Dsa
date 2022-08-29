@@ -12,6 +12,11 @@ public class RotateImage {
         for (int[] row : arr){
             System.out.println(Arrays.toString(row));
         }
+        reverse(arr);
+        System.out.println("after reverse: ");
+        for (int[] row : arr){
+            System.out.println(Arrays.toString(row));
+        }
     }
     static void transpose(int[][] arr){
         for (int i = 0; i < arr.length; i++) {
@@ -19,10 +24,18 @@ public class RotateImage {
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
-                System.out.println("i , j : "+ i + " " + j);
                 for(int[] row: arr){
-                    System.out.println(Arrays.toString(row));
                 }
+            }
+        }
+    }
+    static void reverse(int[][] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr[i].length; j++) {
+                // reveres elements in each row. starting with last element,....
+                int temp = arr[i][j];
+                arr[i][j] = arr[i][arr[i].length-1-j];
+                arr[i][arr[i].length-1-j] = temp;
             }
         }
     }
