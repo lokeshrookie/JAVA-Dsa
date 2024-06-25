@@ -5,8 +5,31 @@ import java.util.Arrays;
 public class ReverseTheArray {
     public static void main(String[] args) {
         int[] arr  = {1,2,3,4,5,6,7};
-        System.out.println(Arrays.toString(reverseArray2(arr)));
+        System.out.println( " Before  "  + Arrays.toString(arr));
+        // System.out.println( Arrays.toString(revArr(arr)));
+        revArr(arr);
+        System.out.println(" After " +  Arrays.toString(arr));
+
+
     }
+
+    
+    public static void revArr(int[] arr){
+        // swap first element with the last element.
+        // two pointer.
+        // keep note of indices.
+        int s = 0;
+        int e = arr.length-1;
+        while(s <= e){
+            int m = s+(e-s)/2;
+            swap(arr, s, e);
+            s++;
+            e--;
+        }
+    }
+
+
+
     /* Method - 1*/
     private static void reverse(int[] arr) {
         int[] arr2 = new int[arr.length];
